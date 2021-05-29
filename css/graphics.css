@@ -1,0 +1,31 @@
+*
+{
+    padding:0;
+    border:0;
+    margin:0;
+    box-sizing:border-box;
+    /* set all CSS box properties to 0 and use border-box for box sizing so that
+the width and height properties (and min/max properties) includes content, padding and border.*/
+}
+
+/* class selector uses . sign.
+ A class selector allows you to define style rules that apply to any element with a class attribute equal to a certain value.*/
+
+ /* id selector uses # sign. The id selector allows you to define style rules that apply to a single element on the web page */
+#mySiteHeader 
+{
+    background-color: #FE9000;
+}
+
+#myNavBar
+{
+    background-color: #0D6077;
+    color:white;
+}
+
+#mySiteFooter
+{
+    background-color: #0D6077;
+    color:white;
+}
+
