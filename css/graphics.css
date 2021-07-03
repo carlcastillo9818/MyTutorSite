@@ -31,3 +31,15 @@ element with a class attribute equal to a certain value.*/
     color:white;
 }
 
+/*
+https://www.jsdiaries.com/how-to-remove-html-purple-link-an-easy-solution/
+
+With this in mind, how can you remove an HTML purple link? 
+A purple link can be removed by overriding the default link styles in CSS. 
+Specifically, a purple link indicates that the link has already been visited. 
+So in order to change this style we must change the CSS :visited pseudo class.
+*/
+a:visited { 
+ text-decoration: none; 
+ color: blue; 
+}

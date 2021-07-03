@@ -3,9 +3,72 @@
     <head>
         <title>My Testimonials</title>
         <meta charset = "utf-8" />
+        <link rel = "stylesheet" href = "css/graphics.css">
     </head>
     <body>
-        
+        <header id = "mySiteHeader">
+            <aside><img src = "imgs/homepageimgs/selfie1.jpg" alt = "Picture of the tutor Carlos Castillos face"></aside>
+            <h1>Carlos Castillo - Computer Science Tutor</h1>
+        </header>
+
+        <nav id = "myNavBar">
+        <ul>
+            <li><a href = "index.html">Home</a></li>
+            <li><a href = "aboutPage.html">About Me</a></li>
+            <li><a href = "testimonialsPage.html">Testimonials</a></li>
+            <li><a href = "contactPage.html">Contact Me</a></li>
+            <li>My Services</li>
+        </ul>
+        </nav>
+
+        <main id ="myTestimonialsPage">
+            <h2>Testimonials</h2>
+            
+            <!-- this first section is a video testimonial-->            
+            <section> 
+                <h3>Video Testimonial 1</h3>
+                <video width = "800" height = "460" controls>
+                    <source src = "videos/testimonialspagevideos/pauleenvideotestimonial.mp4" type = "video/mp4" />
+                </video>
+            </section>
+
+            <!-- this second section is a video testimonial-->
+            <section>
+                <h3>Video Testimonial 2</h3>
+                <video width="800" height="450" controls>
+                    <source src="videos/testimonialspagevideos/charlievideotestimonial.mp4" type="video/mp4" />
+                </video>
+            </section>
+            
+            <!-- this third section is an audio testimonial-->
+            <section>
+                <h3>Audio Testimonial</h3>
+                <p>Oriana Jaramillo - Student at Passaic County Community College</p>
+                <audio controls>
+                    <source src = "videos/testimonialspagevideos/orianaAudio.m4a" type = "audio/mp3" />
+                </audio>
+            </section>
+        </main>
+
+        <footer id="mySiteFooter">
+            <!--Typically contains
+                Author Information
+                Copyright
+                Contact 
+                Terms of Use links-->
+            <ul>
+                <!-- the link menu is here -->
+                <!-- anchor element - creates hyperlink to another page or file remember to include protocols http or https -->
+                <!-- relative hyperlink (links to pages on same computer) -->
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutPage.html">About Me</a></li>
+                <li><a href="testimonialsPage.html">Testimonials</a></li>
+                <li><a href="contactPage.html">Contact Me</a></li>
+                <li>My Services</li>
+                <li>
+                    <p>&copy; Copyright 2021 CarlCastilloTutoring.com</p>
+                </li>
+            </ul>
+        </footer>
     </body>
-    
 </html>
