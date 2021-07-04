@@ -1,3 +1,6 @@
+/* using this font from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@900&display=swap');
+
 *
 {
     padding:0;
@@ -16,19 +19,73 @@ element with a class attribute equal to a certain value.*/
  The id selector allows you to define style rules that apply to a single element on the web page */
 #mySiteHeader 
 {
+    /* used a grid layout for the header */
     background-color: #FE9000;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    font-family: 'Noto Sans HK', sans-serif;
 }
 
-#myNavBar
+#websiteMainLogoAside
 {
+    /* adjusted spacing outside of the borders */
+    margin-left: 10%;
+    margin-right: 5%;
+}
+
+#websiteMainLogoImg
+{
+    /* adjusted spacing between content and borders */
+    padding-left: 350px;
+    padding-top: 20px;
+}
+
+#websiteTitle
+{
+    /* adjusted different spacings and size of the site title at the top*/
+    margin-left: -1%;
+    padding-top: 50px;
+    font-size: 4em;
+}
+
+#myNavMenu
+{
+    /* adjusted text and colors for the nav element */
     background-color: #0D6077;
-    color:white;
+    text-align: center;
+    font-size: 1.5em;
+    font-family: 'Noto Sans HK', sans-serif;
+}
+
+.navBarListItem
+{
+    /* adjusted layout for each LIST ITEM in the nav element*/
+    display: inline-block; /* this layout gives side by side nav menu*/
+    margin-left: 5%;
+    margin-right: 5%;
+
+}
+
+.navBarHyperLink
+{
+    /* adjusted colors for hyperlinks in the nav menu and footer menu */
+    color: white;
+
 }
 
 #mySiteFooter
 {
+    /* adjusted color and text for the footer element*/
     background-color: #0D6077;
-    color:white;
+    text-align: center;
+    font-size: 1.5em;
+    font-family: 'Noto Sans HK', sans-serif;
+
+}
+
+#copyrightText
+{
+    color: white;
 }
 
 /*
@@ -38,8 +95,10 @@ With this in mind, how can you remove an HTML purple link?
 A purple link can be removed by overriding the default link styles in CSS. 
 Specifically, a purple link indicates that the link has already been visited. 
 So in order to change this style we must change the CSS :visited pseudo class.
-*/
+
 a:visited { 
  text-decoration: none; 
  color: blue; 
 }
+
+*/

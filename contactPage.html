@@ -5,20 +5,19 @@
         <meta charset="utf-8" />
         <link rel="stylesheet" href="css/graphics.css">
     </head>
-
     <body>
         <header id="mySiteHeader">
-            <aside><img src="imgs/homepageimgs/selfie1.jpg" alt="Picture of the tutor Carlos Castillos face"></aside>
-            <h1>Carlos Castillo - Computer Science Tutor</h1>
+            <aside id = "websiteMainLogoAside"><img id = "websiteMainLogoImg" src="imgs/homepageimgs/selfie1.jpg" alt="Picture of the tutor Carlos Castillos face"></aside>
+            <h1 id = "websiteTitle">Carlos Castillo's Site</h1>
         </header>
 
-        <nav id="myNavBar">
+        <nav id="myNavMenu">
             <ul>
-                <li><a href = "index.html">Home</a></li>
-                <li><a href = "aboutPage.html">About Me</a></li>
-                <li><a href = "testimonialsPage.html">Testimonials</a></li>
-                <li><a href = "contactPage.html">Contact Me</a></li>
-                <li>My Services</li>
+                <li class = "navBarListItem"><a class = "navBarHyperLink" href = "index.html">Home</a></li>
+                <li class = "navBarListItem"><a class = "navBarHyperLink" href = "aboutPage.html">About Me</a></li>
+                <li class = "navBarListItem"><a class = "navBarHyperLink" href = "testimonialsPage.html">Testimonials</a></li>
+                <li class = "navBarListItem"><a class = "navBarHyperLink" href = "contactPage.html">Contact Me</a></li>
+                <li class = "navBarListItem"><a class = "navBarHyperLink" href="tutoringServicesPage.html">Tutoring Services</a></li>
             </ul>
         </nav>
 
@@ -27,6 +26,7 @@
             
             <!-- this first section provides link to my social media accounts-->
             <section>
+                <img src = "imgs/contactpageimgs/socialmediapic.jpg" alt = "A picture of social media icons on a smartphone" />
                 <h3>Social Media</h3>
                 <p> These are the social media accounts you can reach me at.</p>
                 <ul>
@@ -36,10 +36,19 @@
             </section>
 
             <!-- this second section provides link to my email-->
-
+            <section>
+                <img src = "imgs/contactpageimgs/emailpic.jpg" alt = "A picture of an email app icon on a smartphone" />
+                <h3>Email</h3>
+                <a href="mailto:carlcastillo690@gmail.com">Send Email</a>
+                <p>Here is my direct email address (in case the link didn't work): carlcastillo690@gmail.com</p>
+            </section>
 
             <!-- this third section provides link to my phone number-->
-
+            <section>
+                <img src = "imgs/contactpageimgs/phonepic.jpg" alt = "A picture of a red telephone" />
+                <h3>Phone Number</h3>
+                <p>Work Phone : 973-968-8125</p>
+            </section>
         </main>
 
         <footer id="mySiteFooter">
@@ -52,14 +61,12 @@
                 <!-- the link menu is here -->
                 <!-- anchor element - creates hyperlink to another page or file remember to include protocols http or https -->
                 <!-- relative hyperlink (links to pages on same computer) -->
-                <li><a href="index.html">Home</a></li>
-                <li><a href="aboutPage.html">About Me</a></li>
-                <li><a href="testimonialsPage.html">Testimonials</a></li>
-                <li><a href="contactPage.html">Contact Me</a></li>
-                <li>My Services</li>
-                <li>
-                    <p>&copy; Copyright 2021 CarlCastilloTutoring.com</p>
-                </li>
+                <li><a class = "navBarHyperLink" href="index.html">Home</a></li>
+                <li><a class = "navBarHyperLink" href="aboutPage.html">About Me</a></li>
+                <li><a class = "navBarHyperLink" href="testimonialsPage.html">Testimonials</a></li>
+                <li><a class = "navBarHyperLink" href="contactPage.html">Contact Me</a></li>
+                <li><a class = "navBarHyperLink" href="tutoringServicesPage.html">Tutoring Services</a></li>
+                <li><p id = "copyrightText">&copy; Copyright 2021 CarlCastilloTutoring.com</p></li>
             </ul>
         </footer>
     </body>

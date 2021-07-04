@@ -11,21 +11,21 @@
             Company Logo
             Company Name / Page Name
             Banner-->
-            <aside><img src = "imgs/homepageimgs/selfie1.jpg" alt="Picture of the tutor Carlos Castillo's face"/></aside>
-            <h1>Carlos Castillo - Computer Science Tutor</h1>
+            <aside id = "websiteMainLogoAside"><img id = "websiteMainLogoImg" src = "imgs/homepageimgs/selfie1.jpg" alt="Picture of the tutor Carlos Castillo's face"/></aside>
+            <h1 id = "websiteTitle">Carlos Castillo's Site</h1>
         </header> 
         
-        <nav id = "myNavBar">
+        <nav id = "myNavMenu">
             <!--Container of links for a site. Usually contains a Link Menu-->
             <ul>
                 <!-- the link menu is here -->
                 <!-- anchor element - creates hyperlink to another page or file remember to include protocols http or https -->
                 <!-- relative hyperlink (links to pages on same computer) -->
-                <li><a href = "index.html">Home</a></li>
-                <li><a href = "aboutPage.html">About Me</a></li>
-                <li><a href = "testimonialsPage.html">Testimonials</a></li>
-                <li><a href="contactPage.html">Contact Me</a></li>
-                <li>My Services</li>
+                <li class = "navBarListItem"><a class = "navBarHyperLink" href = "index.html">Home</a></li>
+                <li class = "navBarListItem"><a class = "navBarHyperLink" href = "aboutPage.html">About Me</a></li>
+                <li class = "navBarListItem"><a class = "navBarHyperLink" href = "testimonialsPage.html">Testimonials</a></li>
+                <li class = "navBarListItem"><a class = "navBarHyperLink" href="contactPage.html">Contact Me</a></li>
+                <li class = "navBarListItem"><a class = "navBarHyperLink" href="tutoringServicesPage.html">Tutoring Services</a></li>
             </ul>
         </nav>
         
@@ -37,43 +37,43 @@
 
             <section>
                 <h3>C++ Pokemart CMD Project</h3>
-                <video width = "710" height = "400" controls>
-                    <source src = "videos/homepagevideos/pokemartShowCaseVideo.mov" type = "video/mp4" />
-                </video>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/bh_b1_zeECs" title="YouTube video player"
+                    style="border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
             </section>
             
             <section>
-                <h3>Swift Pokemon Pokedex Project</h3>
-                <video width = "450" height = "800" controls muted>
-                    <source src = "videos/homepagevideos/myPokeDexMiniApp.MOV" type = "video/mp4" />
-                </video>
+                <h3>Swift Mini Pokedex Project</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/P5UtWrSsXhg" title="YouTube video player"
+                    style="border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
             </section>
 
             <section>
                 <h3>Star Wars Website Project (HTML & CSS)</h3>
-                <video width = "889" height = "500" controls>
-                    <source src = "videos/homepagevideos/myStarWarsSite.mkv" type = "video/mp4" />
-                </video>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/ucbcz-4148Q" title="YouTube video player"
+                    style="border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
             </section>
 
             <section>
                 <h3>JavaFX The T&H Bank Project</h3>
-                <video width = "800" height = "500" controls>
-                    <source src = "videos/homepagevideos/newjavavideo.mov" type = "video/mp4" />
-                </video>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/obc55DwKYVY" title="YouTube video player"
+                    style="border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
             </section>
             
             <section>
                 <h3>My LinkedIn</h3>
                 <a href = "https://www.linkedin.com/in/carlos-castillo-429004141/">
-                    <img src = "imgs/homepageimgs/linkedinlogosmall.png" alt = "LinkedIn Profile"/>
+                    <img src = "imgs/homepageimgs/linkedinlogosmall.png" alt = "LinkedIn Logo"/>
                 </a>
             </section>
 
             <section>
                 <h3>My Github</h3>
                 <a href = "https://github.com/carlcastillo9818">
-                    <img src = "imgs/homepageimgs/GitHub-Mark-120px-plus.png"/>
+                    <img src = "imgs/homepageimgs/GitHub-Mark-120px-plus.png" alt = "GitHube Logo"/>
                 </a>
             </section>
 
@@ -98,12 +98,12 @@
                 <!-- the link menu is here -->
                 <!-- anchor element - creates hyperlink to another page or file remember to include protocols http or https -->
                 <!-- relative hyperlink (links to pages on same computer) -->
-                <li><a href = "index.html">Home</a></li>
-                <li><a href = "aboutPage.html">About Me</a></li>
-                <li><a href = "testimonialsPage.html">Testimonials</a></li>
-                <li><a href = "contactPage.html">Contact Me</a></li>
-                <li>My Services</li>
-                <li><p>&copy; Copyright 2021 CarlCastilloTutoring.com</p></li>
+                <li><a class = "navBarHyperLink" href = "index.html">Home</a></li>
+                <li><a class = "navBarHyperLink" href = "aboutPage.html">About Me</a></li>
+                <li><a class = "navBarHyperLink" href = "testimonialsPage.html">Testimonials</a></li>
+                <li><a class = "navBarHyperLink" href = "contactPage.html">Contact Me</a></li>
+                <li><a class = "navBarHyperLink" href="tutoringServicesPage.html">Tutoring Services</a></li>
+                <li><p id = "copyrightText">&copy; Copyright 2021 CarlCastilloTutoring.com</p></li>
             </ul>
         </footer>
     </body>

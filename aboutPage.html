@@ -11,21 +11,21 @@
             Company Logo
             Company Name / Page Name
             Banner-->
-            <aside><img src = "imgs/homepageimgs/selfie1.jpg" alt="Picture of the tutor Carlos Castillo's face"/></aside>
-            <h1>Carlos Castillo - Computer Science Tutor</h1>
+            <aside id = "websiteMainLogoAside"><img id = "websiteMainLogoImg" src = "imgs/homepageimgs/selfie1.jpg" alt="Picture of the tutor Carlos Castillo's face"/></aside>
+            <h1 id = "websiteTitle">Carlos Castillo's Site</h1>
         </header> 
         
-        <nav id = "myNavBar">
+        <nav id = "myNavMenu">
             <!--Container of links for a site. Usually contains a Link Menu-->
             <ul>
                 <!-- the link menu is here -->
                 <!-- anchor element - creates hyperlink to another page or file remember to include protocols http or https -->
                 <!-- relative hyperlink (links to pages on same computer) -->
-                <li><a href = "index.html">Home</a></li>
-                <li><a href = "aboutPage.html">About Me</a></li>
-                <li><a href="testimonialsPage.html">Testimonials</a></li>
-                <li><a href="contactPage.html">Contact Me</a></li>
-                <li>My Services</li>
+                <li class = "navBarListItem"><a class = "navBarHyperLink" href = "index.html">Home</a></li>
+                <li class = "navBarListItem"><a class = "navBarHyperLink" href = "aboutPage.html">About Me</a></li>
+                <li class = "navBarListItem"><a class = "navBarHyperLink" href="testimonialsPage.html">Testimonials</a></li>
+                <li class = "navBarListItem"><a class = "navBarHyperLink" href="contactPage.html">Contact Me</a></li>
+                <li class = "navBarListItem"><a class = "navBarHyperLink" href="tutoringServicesPage.html">Tutoring Services</a></li>
             </ul>
         </nav>
         
@@ -33,7 +33,7 @@
             <!-- Contains the major content of the page
             Maybe be subdivided into sections and articles
             -->
-            <h2>ABOUT ME</h2>
+            <h2>About Me</h2>
 
             <section>
             <!-- Include facts about myself and what I know.-->
@@ -87,12 +87,12 @@
                 <!-- the link menu is here -->
                 <!-- anchor element - creates hyperlink to another page or file remember to include protocols http or https -->
                 <!-- relative hyperlink (links to pages on same computer) -->
-                <li><a href = "index.html">Home</a></li>
-                <li><a href = "aboutPage.html">About Me</a></li>
-                <li><a href="testimonialsPage.html">Testimonials</a></li>
-                <li><a href="contactPage.html">Contact Me</a></li>
-                <li>My Services</li>
-                <li><p>&copy; Copyright 2021 CarlCastilloTutoring.com</p></li>
+                <li><a class = "navBarHyperLink" href = "index.html">Home</a></li>
+                <li><a class = "navBarHyperLink" href = "aboutPage.html">About Me</a></li>
+                <li><a class = "navBarHyperLink" href="testimonialsPage.html">Testimonials</a></li>
+                <li><a class = "navBarHyperLink" href="contactPage.html">Contact Me</a></li>
+                <li><a class = "navBarHyperLink" href="tutoringServicesPage.html">Tutoring Services</a></li>
+                <li><p id = "copyrightText">&copy; Copyright 2021 CarlCastilloTutoring.com</p></li>
             </ul>
         </footer>
     </body>
