@@ -20,7 +20,7 @@ element with a class attribute equal to a certain value.*/
 #mySiteHeader 
 {
     /* used a grid layout for the header */
-    background-color: #FE9000;
+    background-image: linear-gradient(#5BC0EB, white, #5BC0EB);
     display: grid;
     grid-template-columns: 1fr 2fr;
     font-family: 'Noto Sans HK', sans-serif;
@@ -51,10 +51,11 @@ element with a class attribute equal to a certain value.*/
 #myNavMenu
 {
     /* adjusted text and colors for the nav element */
-    background-color: #0D6077;
+    background-color: #5BC0EB;
     text-align: center;
     font-size: 1.5em;
     font-family: 'Noto Sans HK', sans-serif;
+    border: 0.2em black solid;
 }
 
 .navBarListItem
@@ -69,7 +70,7 @@ element with a class attribute equal to a certain value.*/
 .navBarHyperLink
 {
     /* adjusted colors for hyperlinks in the nav menu and footer menu */
-    color: white;
+    color: black;
 
 }
 
@@ -81,24 +82,25 @@ element with a class attribute equal to a certain value.*/
     column-gap:1%; /* adjust the space between each column in the grid */
     row-gap: 50px; /* adjust the space between each row in the grid*/
     font-family: 'Noto Sans HK', sans-serif;
-    background-color: #FE9000;
     border:0.5em black double; /* set border width, color, and style in border shorthand*/
+    background-image: linear-gradient(#FA8334, white, #FA8334);
 }
 
 #ProjectsHeading
 {
     grid-column: 1 / 3; /* specifies size and location of the item within grid column */
     grid-row:1; /* specifies size and location of the item within grid row */
-    background-color: #FE9000;
     margin-bottom: 400px; /* spacing outside border against the bottom */
     font-size: 2em;
 }
 
 .EachIndividualProjectHeading
 {
-    background-color: #0D6077;
-    color: white;
+    background-color: #5BC0EB;
+    color: black;
     border: 0.2em black solid;
+    margin-bottom: 5px;
+    margin-right: 20%;
 }
 
 #myFirstProject
@@ -107,7 +109,12 @@ element with a class attribute equal to a certain value.*/
     grid-row: 2; /* specifies size and location of the item within grid row */
     margin-top: -425px; /* spacing outside border against the top */
     margin-bottom: 350px; /* spacing outside border against the bottom */
+    margin-left: 1%;
+}
 
+#myFirstProjectParagraph
+{
+    width: 80%;
 }
 
 #mySecondProject
@@ -116,6 +123,12 @@ element with a class attribute equal to a certain value.*/
     grid-row: 3;
     margin-top: -300px; /* spacing outside border against the top */
     margin-bottom: 350px;
+    margin-left: 1%;
+}
+
+#mySecondProjectParagraph
+{
+    width: 80%;
 }
 
 #myThirdProject
@@ -123,6 +136,12 @@ element with a class attribute equal to a certain value.*/
     grid-column: 1;
     grid-row: 4;
     margin-top: -300px; /* spacing outside border against the top */
+    margin-left: 1%;
+}
+
+#myThirdProjectParagraph
+{
+    width: 80%;
 }
 
 #myFourthProject
@@ -130,6 +149,11 @@ element with a class attribute equal to a certain value.*/
     grid-column: 2;
     grid-row: 4;
     margin-top: -300px; /* spacing outside border against the top */
+}
+
+#myFourthProjectParagraph
+{
+    width: 80%; /* width is in percent of the containing block*/
 }
 
 #myLinkedIn
@@ -142,8 +166,13 @@ element with a class attribute equal to a certain value.*/
 
 #myLinkedInHeading
 {
-    background-color:#FE9000;
+    background-color:#5BC0EB;
     margin-right: 80%;
+}
+
+#linkedinlogoImg
+{
+    width: 18%;
 }
 
 #MyGitHub
@@ -156,7 +185,7 @@ element with a class attribute equal to a certain value.*/
 
 #myGitHubHeading
 { 
-    background-color:#FE9000;    
+    background-color:#5BC0EB;    
     margin-right: 70%;
 
 }
@@ -171,18 +200,20 @@ element with a class attribute equal to a certain value.*/
 
 #OtherWebsitesUnorderedList
 {
-    list-style-type: none;
+    list-style-type: none; /* hides the little circles from being shown next to the list items*/
+    line-height: 100px; /* changes the spacing between each list item */
 }
 
 .ULwebsiteListItem
 {
+    font-size: 2em;
     color: black;
 }
 
 #mySiteFooter
 {
     /* adjusted color and text for the footer element*/
-    background-color: #0D6077;
+    background-image: linear-gradient(#5BC0EB, white, #5BC0EB);
     text-align: center;
     font-size: 1.5em;
     font-family: 'Noto Sans HK', sans-serif;
@@ -191,7 +222,7 @@ element with a class attribute equal to a certain value.*/
 #copyrightText
 {
     /* adjusted text color of the copyright text */
-    color: white;
+    color: black;
 }
 
 /*
