@@ -1,3 +1,5 @@
+/* 7-24-21 Hey Carlos, next time work on adjusting the linkedin and github links so they align then
+finish up the about page and start working on the testimonials page!*/
 /* using this font from google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@900&display=swap');
 
@@ -56,6 +58,7 @@ element with a class attribute equal to a certain value.*/
     font-size: 1.5em;
     font-family: 'Noto Sans HK', sans-serif;
     border: 0.2em black solid;
+
 }
 
 .navBarListItem
@@ -78,11 +81,11 @@ element with a class attribute equal to a certain value.*/
 {
     display: grid; /* divide page elements into columns and rows.*/
     grid-template-columns: 1fr 1fr; /* set sizing for grid columns */
-    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr; /* set sizing for grid rows */
+    grid-template-rows: 0.5fr 0.5fr 0.5fr; /* set sizing for grid rows */
     column-gap:1%; /* adjust the space between each column in the grid */
     row-gap: 50px; /* adjust the space between each row in the grid*/
     font-family: 'Noto Sans HK', sans-serif;
-    border:0.5em black double; /* set border width, color, and style in border shorthand*/
+    border:0.2em black solid; /* set border width, color, and style in border shorthand*/
     background-image: linear-gradient(#FA8334, white, #FA8334);
 }
 
@@ -90,8 +93,8 @@ element with a class attribute equal to a certain value.*/
 {
     grid-column: 1 / 3; /* specifies size and location of the item within grid column */
     grid-row:1; /* specifies size and location of the item within grid row */
-    margin-bottom: 400px; /* spacing outside border against the bottom */
-    font-size: 2em;
+    font-size: 2.5em;
+    text-align: center;
 }
 
 .EachIndividualProjectHeading
@@ -107,14 +110,17 @@ element with a class attribute equal to a certain value.*/
 {
     grid-column: 1; /* specifies size and location of the item within grid column */
     grid-row: 2; /* specifies size and location of the item within grid row */
-    margin-top: -425px; /* spacing outside border against the top */
-    margin-bottom: 350px; /* spacing outside border against the bottom */
+    margin-top: -370px; /* spacing outside border against the top */
+    margin-bottom: 370px; /* spacing outside border against the bottom */
     margin-left: 1%;
 }
 
 #myFirstProjectParagraph
 {
     width: 80%;
+    background-color: #5BC0EB;
+    border: 0.2em black solid;
+    margin-bottom: 5px; /* spacing outside border against the bottom */
 }
 
 #mySecondProject
@@ -122,93 +128,167 @@ element with a class attribute equal to a certain value.*/
     grid-column: 1;
     grid-row: 3;
     margin-top: -300px; /* spacing outside border against the top */
-    margin-bottom: 350px;
     margin-left: 1%;
 }
 
 #mySecondProjectParagraph
 {
     width: 80%;
+    background-color: #5BC0EB;
+    border: 0.2em black solid;
+    margin-bottom: 5px; /* spacing outside border against the bottom */
 }
 
 #myThirdProject
 {
-    grid-column: 1;
-    grid-row: 4;
-    margin-top: -300px; /* spacing outside border against the top */
-    margin-left: 1%;
+    grid-column: 2;
+    grid-row: 2;
+    margin-top: -370px; /* spacing outside border against the top */
+    margin-bottom: 370px; /* spacing outside border against the bottom */
 }
 
 #myThirdProjectParagraph
 {
     width: 80%;
+    background-color: #5BC0EB;
+    border: 0.2em black solid;
+    margin-bottom: 5px; /* spacing outside border against the bottom */
 }
 
 #myFourthProject
 {
     grid-column: 2;
-    grid-row: 4;
+    grid-row: 3;    
     margin-top: -300px; /* spacing outside border against the top */
 }
 
 #myFourthProjectParagraph
 {
     width: 80%; /* width is in percent of the containing block*/
+    background-color: #5BC0EB;
+    border: 0.2em black solid;
+    margin-bottom: 5px; /* spacing outside border against the bottom */
 }
 
-#myLinkedIn
+#myAboutPage
 {
+    display: grid; /* divide page elements into columns and rows.*/
+    grid-template-columns: 1fr 1fr; /* set sizing for grid columns */
+    grid-template-rows: 1fr 1fr; /* set sizing for grid rows */
+    column-gap:1%; /* adjust the space between each column in the grid */
+    row-gap: 50px; /* adjust the space between each row in the grid*/
+    font-family: 'Noto Sans HK', sans-serif;
+    border:0.2em black solid; /* set border width, color, and style in border shorthand*/
+    background-image: linear-gradient(#FA8334, white, #FA8334);
+}
+
+#basicFactsSection
+{
+    grid-column: 1; /* specifies size and location of the item within grid column */
+    grid-row: 1; /* specifies size and location of the item within grid row */
+    margin-top: 25px; /* spacing outside border against the top */
+    margin-left: 5%;
+}
+
+#basicFactsHeading
+{
+    background-color: #5BC0EB;
+    color: black;
+    border: 0.2em black solid;
+    margin-bottom: 5px;
+    margin-right: 20%;
+}
+
+#basicFactsUnorderedList
+{
+    list-style-type: disc; /* hides the little dot next to each list item*/
+    line-height: 40px; /* specifies the height of a line (spacing between each item).*/
+    background-color: #5BC0EB;
+    border: 0.2em black solid;
+}
+
+.basicFactsListItem
+{
+    margin-left: 5%;
+}
+
+#tutorMissionSection
+{
+    grid-column: 1; /* specifies size and location of the item within grid column */
+    grid-row: 2; /* specifies size and location of the item within grid row */
+    margin-top: 25px; /* spacing outside border against the top */
+    margin-left: 5%;
+}
+
+#tutorMissionHeading
+{
+    background-color: #5BC0EB;
+    color: black;
+    border: 0.2em black solid;
+    margin-bottom: 5px;
+    margin-right: 20%;
+}
+
+#tutorMissionParagraph
+{
+    background-color: #5BC0EB;
+    border: 0.2em black solid;
+}
+
+#tutorPhotoSection
+{
+    grid-column: 2; /* specifies size and location of the item within grid column */
+    grid-row: 1; /* specifies size and location of the item within grid row */
+    margin-top: 50px; /* spacing outside border against the top */
+    margin-left: 20%;
+}
+
+#myPortfolioSitesSection
+{
+    margin-top: 25px; /* spacing outside border against the top */
+    margin-left: 20%;
     grid-column: 2;
     grid-row: 2;
-    margin-top: -425px; /* spacing outside border against the top */
-    margin-bottom: 350px;
 }
 
-#myLinkedInHeading
+
+#myPortfolioSitesHeading
 {
-    background-color:#5BC0EB;
-    margin-right: 80%;
+    background-color: #5BC0EB;
+    color: black;
+    border: 0.2em black solid;
+    margin-bottom: 5px;
+    margin-right: 20%;
+}
+
+#myPortfolioSitesUnorderedList
+{
+    list-style-type: none; /* hides the little dot next to each list item*/
+    
+}
+
+#secondPortfolioSite
+{
+    margin-left: 25%;    
+}
+
+.myPortfolioSitesListItem
+{
+    display: inline-block; /* this layout gives side by side nav menu*/
+    background-color: green;
 }
 
 #linkedinlogoImg
 {
-    width: 18%;
+    width: 20%;
+    background-color: white;
 }
 
-#MyGitHub
+#githublogoImg
 {
-    grid-column: 2;
-    grid-row: 2;
-    margin-top: -250px;
-    margin-bottom: 350px;
+    background-color: white;
 }
 
-#myGitHubHeading
-{ 
-    background-color:#5BC0EB;    
-    margin-right: 70%;
-
-}
-
-#OtherWebsitesReferences
-{
-    grid-column: 2;
-    grid-row: 3;
-    margin-top: -300px; /* spacing outside border against the top */
-    margin-bottom: 350px;
-}
-
-#OtherWebsitesUnorderedList
-{
-    list-style-type: none; /* hides the little circles from being shown next to the list items*/
-    line-height: 100px; /* changes the spacing between each list item */
-}
-
-.ULwebsiteListItem
-{
-    font-size: 2em;
-    color: black;
-}
 
 #mySiteFooter
 {
@@ -236,6 +316,34 @@ So in order to change this style we must change the CSS :visited pseudo class.
 a:visited { 
  text-decoration: none; 
  color: blue; 
+}
+
+*/
+
+/*
+#OtherWebsitesReferences
+{
+    grid-column: 2;
+    grid-row: 3;
+    margin-top: -300px; 
+    margin-bottom: 350px;
+} 
+
+#OtherWebsitesUnorderedList
+{
+    list-style-type: none; 
+    line-height: 100px; 
+    background-color: #5BC0EB;
+    border: 0.2em black solid;
+    margin-right: 20%;
+    text-align: center;
+
+}
+
+.ULwebsiteListItem
+{
+    font-size: 2em;
+    color: black;
 }
 
 */

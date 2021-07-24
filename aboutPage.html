@@ -33,26 +33,23 @@
             <!-- Contains the major content of the page
             Maybe be subdivided into sections and articles
             -->
-            <h2>About Me</h2>
-
-            <section>
+            <section id = "basicFactsSection">
             <!-- Include facts about myself and what I know.-->
-
-                <h3>Some Basic Facts about me!</h3>
-                <ul>
-                    <li>I earned my associates degree in Computer Science in Spring 2021.</li>
-                    <li>I am currently pursuing a Computer Science bachelors degree.</li>
-                    <li>I like to code, play guitar, and play video games as well!</li>
-                    <li>My favorite programming language currently is Python (simple to learn but hard to master!)</li>
-                    <li>I've tutored a C++ computer science class in the Spring but I started helping students back in 2019 
+                <h3 id = "basicFactsHeading">Some Basic Facts about me!</h3>
+                <ul id = "basicFactsUnorderedList">
+                    <li class = "basicFactsListItem">I earned my associates degree in Computer Science in Spring 2021.</li>
+                    <li class = "basicFactsListItem">I am currently pursuing a Computer Science bachelors degree.</li>
+                    <li class = "basicFactsListItem">I like to code, play guitar, and play video games as well!</li>
+                    <li class = "basicFactsListItem">My favorite programming language currently is Python (simple to learn but hard to master!)</li>
+                    <li class = "basicFactsListItem">I've tutored a C++ computer science class in the Spring but I started helping students back in 2019 
                         at the IT computer lab in my CC in several programming languages as well as basic algebra to precalculus.</li>
                 </ul>
             </section>
 
-            <section>
+            <section id = "tutorMissionSection">
                 <!-- Include mission statement section explaining my goal when it comes to tutoring.-->
-                <h3>My Tutoring Mission Statement</h3>
-                <p>
+                <h3 id = "tutorMissionHeading">My Tutoring Mission Statement</h3>
+                <p id = "tutorMissionParagraph">
                     My mission when it comes to tutoring is to help the student/learner to understand programming (or math) concepts
                     as clearly as possible.  I will achieve this through easy-to-understand examples, reference videos, live tutoring 
                     sessions, drawings, and even cooperative projects for more complex concepts! Whether its Python, C++, Java, or Algebra
@@ -60,20 +57,31 @@
                 </p>
             </section>
 
-            <section>
+            <section id = "tutorPhotoSection">
                 <!-- Include a photo of myself in this section-->
-                <h3>Picture of Me</h3>
                 <img src = "imgs/aboutpageimgs/selfie3.jpg" alt = "Carlos Castillo selfie"/>
             </section>
 
-            <!-- Comment out this section until later, I may add it back in but for now it seems redundant because I have my linkedin on the home page already.-->
-            <!-- embed pdf viewer in html-->
-            <!-- 
-            <section>
-                <h3>My Resume</h3>
-                <iframe src = "Carlos Castillo Job Resume.pdf#toolbar=0&navpanes=0"  width="100%" height="500px">
-                </iframe>
+            <section id = "myPortfolioSitesSection">
+                <h3 id = "myPortfolioSitesHeading">Links to my LinkedIn/GitHub/etc. (Click on each picture to be taken there)</h3>
+                <ul id = "myPortfolioSitesUnorderedList">
+                    <li class = "myPortfolioSitesListItem"><a href="https://www.linkedin.com/in/carlos-castillo-429004141/"><img id="linkedinlogoImg" src="imgs/homepageimgs/LI-In-Bug.png" alt="LinkedIn Logo" /></a></li>
+                    <li id = "secondPortfolioSite" class = "myPortfolioSitesListItem"><a href="https://github.com/carlcastillo9818"><img id="githublogoImg" src="imgs/homepageimgs/GitHub-Mark-120px-plus.png" alt="GitHub Logo" /></a></li>
+                </ul>
+            </section>
+            
+            <!--
+            <section id = "OtherWebsitesReferences">
+                <h3 class = "EachIndividualProjectHeading">Free websites to check out if you need extra help</h3>
+                <ul id = "OtherWebsitesUnorderedList">
+                    <li><a class = "ULwebsiteListItem" href = "https://www.khanacademy.org/">Khan Academy</a></li>
+                    <li><a class = "ULwebsiteListItem" href = "https://www.w3schools.com/">W3Schools</a></li>
+                    <li><a class = "ULwebsiteListItem" href="https://ocw.mit.edu/index.htm">MIT OpenCourseWare</a></li>
+                    <li><a class = "ULwebsiteListItem" href="https://www.cliffsnotes.com/">CliffsNotes</a></li>
+                </ul>
             </section> -->
+
+
             
         </main>
         
