@@ -26,78 +26,84 @@
 
             <!-- This first section is about the subjects I tutor for-->
             <section id = "tutorSubjectsSection">
-                <h3>Subjects I can tutor for (the basics)</h3>
-                <ul>
-                    <li>Python Programming</li>
-                    <li>C++ Programming</li>
-                    <li>Java Programming</li>
-                    <li>Pre-Algebra</li>
-                    <li>Algebra</li>
-                    <li>Discrete Math</li>
-                    <li>English Composition</li>
+                <h3 id = "tutorSubjectsHeading">Subjects I can tutor for</h3>
+                <ul id = "tutorSubjectsUL">
+                    <li class = "tutorSubjectLISTITEM">Python Programming</li>
+                    <li class = "tutorSubjectLISTITEM">C++ Programming</li>
+                    <li class = "tutorSubjectLISTITEM">Java Programming</li>
+                    <li class = "tutorSubjectLISTITEM">Pre-Algebra</li>
+                    <li class = "tutorSubjectLISTITEM">Algebra</li>
+                    <li class = "tutorSubjectLISTITEM">Discrete Math I</li>
+                    <li class = "tutorSubjectLISTITEM">English Composition</li>
                 </ul>
             </section>
 
             <!-- this second section is for frequently asked questions-->
             <section id = "faqSection">
-                <h3>F.A.Q. (Frequently Asked Questions)</h3>
-                <ul>
-                    <li>Q.What days are you available for tutoring? <br /> A. I am currently available every day of the week!</li>
-                    <li>Q.Which forms of payment do you accept? <br/>A. I accept payment through paypal, facebook payment, or zelle.</li>
+                <h3 id = "faqSectionHeading">F.A.Q. (Frequently Asked Questions)</h3>
+                <ul id = "faqUL">
+                    <li class = "faqLISTITEM">Q.What days are you available for tutoring? <br /> A. I am currently available every day of the week as of 8/21/21.</li>
+                    <li class = "faqLISTITEM">Q.Which forms of payment do you accept? <br/>A. I accept payment through paypal, facebook payment, or zelle.</li>
                     <!-- keep adding more questions and answers if you come up with any more.-->
                 </ul>
             </section>
 
             <!-- this third section is for NON package tutoring hours/prices table-->
             <section id = "nonPackageSection">
-                <h3>Tutoring Hours/Pricing (Non Package Options)</h3>
+                <h3 id = "nonPackageHeading">Tutoring Hours/Pricing (Non Package Options)</h3>
                 <!-- The <table> tag defines an HTML table.
 Each table row is defined with a <tr> tag. Each table header is defined with a <th> tag. 
 Each table data/cell is defined with a <td> tag.
 By default, the text in <th> elements are bold and centered.
 By default, the text in <td> elements are regular and left-aligned.-->
-                <table>
+                <table id = "nonPackageTABLE">
                     <tr>
-                        <th>Non-package options</th>
-                        <th>Hours</th>
-                        <th>Prices</th>
+                        <th class = "nonPackageHeaderCell">Non-package options</th>
+                        <th class = "nonPackageHeaderCell">Hours</th>
+                        <th class = "nonPackageHeaderCell">Prices</th>
                     </tr>
                     <tr>
-                        <td>1 session</td>
-                        <td>1 hour</td>
-                        <td>$8.00</td>
+                        <td class = "nonPackageDataCell">1 session</td>
+                        <td class = "nonPackageDataCell">1 hr</td>
+                        <td class = "nonPackageDataCell">$8.00</td>
                     </tr>
                     <tr>
-                        <td>2 sessions</td>
-                        <td>2 hours</td>
-                        <td>$16.00</td>
+                        <td class = "nonPackageDataCell">2 sessions</td>
+                        <td class = "nonPackageDataCell">2 hrs</td>
+                        <td class = "nonPackageDataCell">$16.00</td>
                     </tr>
                     <tr>
-                        <td>3 sessions</td>
-                        <td>3 hours</td>
-                        <td>$24.00</td>
+                        <td class = "nonPackageDataCell">3 sessions</td>
+                        <td class = "nonPackageDataCell">3 hrs</td>
+                        <td class = "nonPackageDataCell">$24.00</td>
                     </tr>
+                        <tr>
+                            <td>NOTE : Each session in this table lasts 1 hour each (ie : 1 session = 1 hour, 2 sessions = 2 hours, etc).</td>
+                        </tr>
                 </table>
             </section>
 
             <!-- this fourth section is for PACKAGE tutoring packages/hours/prices-->
             <section id = "packageSection">
-                <h3>Tutoring Hours/Pricing (Package Options)</h3>
-                <table>
+                <h3 id = "packageHeading">Tutoring Hours/Pricing (Package Options)</h3>
+                <table id = "packageTABLE">
                     <tr>
-                        <th>Package options</th>
-                        <th>Hours</th>
-                        <th>Prices</th>
+                        <th class = "packageHeaderCell">Package options</th>
+                        <th class = "packageHeaderCell">Hours</th>
+                        <th class = "packageHeaderCell">Prices</th>
                     </tr>
                     <tr>
-                        <td>5 sessions</td>
-                        <td>8 hour</td>
-                        <td>$50.00</td>
+                        <td class = "packageDataCell">5 sessions</td>
+                        <td class = "packageDataCell">10 hrs</td>
+                        <td class = "packageDataCell">$60.00</td>
                     </tr>
                     <tr>
-                        <td>10 sessions</td>
-                        <td>15 hours</td>
-                        <td>$110.00</td>
+                        <td class = "packageDataCell">10 sessions</td>
+                        <td class = "packageDataCell">20 hrs</td>
+                        <td class = "packageDataCell">$120.00</td>
+                    </tr>
+                    <tr>
+                        <td>NOTE : Each session in this table lasts 2 hours each (ie : 1 session = 2 hours, 2 sessions = 4 hours, etc).</td>
                     </tr>
                 </table>
             </section>
