@@ -1,6 +1,3 @@
-/* 7-24-21 Hey Carlos, next time work on adjusting the linkedin and github links so they align then
-finish up the about page and start working on the testimonials page!*/
-/* using this font from google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@900&display=swap');
 
 *
@@ -22,10 +19,10 @@ element with a class attribute equal to a certain value.*/
 #mySiteHeader 
 {
     /* used a grid layout for the header */
-    background-image: linear-gradient(#5BC0EB, white, #5BC0EB);
+    background-color: white;
     display: grid;
     grid-template-columns: 1fr 2fr;
-    font-family: 'Noto Sans HK', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #websiteMainLogoAside
@@ -53,10 +50,10 @@ element with a class attribute equal to a certain value.*/
 #myNavMenu
 {
     /* adjusted text and colors for the nav element */
-    background-color: #5BC0EB;
+    background-color: black;
     text-align: center;
     font-size: 1.5em;
-    font-family: 'Noto Sans HK', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     border: 0.2em black solid;
 
 }
@@ -73,7 +70,7 @@ element with a class attribute equal to a certain value.*/
 .navBarHyperLink
 {
     /* adjusted text colors for hyperlinks in the nav menu and footer menu */
-    color: black;
+    color: white;
 
 }
 
@@ -84,9 +81,9 @@ element with a class attribute equal to a certain value.*/
     grid-template-rows: 0.5fr 0.5fr; /* set sizing for grid rows */
     column-gap:1%; /* adjust the space between each column in the grid */
     row-gap: 50px; /* adjust the space between each row in the grid*/
-    font-family: 'Noto Sans HK', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     border:0.2em black solid; /* set border width, color, and style in border shorthand*/
-    background-image: linear-gradient(#FA8334, white, #FA8334);
+    background-color: white;
 }
 
 #ProjectsHeading
@@ -99,7 +96,7 @@ element with a class attribute equal to a certain value.*/
 
 .EachIndividualProjectHeading
 {
-    background-color: #5BC0EB;
+    background-color: white;
     color: black;
     border: 0.2em black solid;
     margin-bottom: 5px;
@@ -110,15 +107,15 @@ element with a class attribute equal to a certain value.*/
 {
     grid-column: 1; /* specifies size and location of the item within grid column */
     grid-row: 2; /* specifies size and location of the item within grid row */
-    margin-top: -370px; /* spacing outside border against the top */
-    margin-bottom: 370px; /* spacing outside border against the bottom */
+    margin-top: -300px; /* spacing outside border against the top */
+    margin-bottom: 300px; /* spacing outside border against the bottom */
     margin-left: 1%;
 }
 
 #myFirstProjectParagraph
 {
     width: 80%;
-    background-color: #5BC0EB;
+    background-color: white;
     border: 0.2em black solid;
     margin-bottom: 5px; /* spacing outside border against the bottom */
 }
@@ -134,7 +131,7 @@ element with a class attribute equal to a certain value.*/
 #mySecondProjectParagraph
 {
     width: 80%;
-    background-color: #5BC0EB;
+    background-color: white;
     border: 0.2em black solid;
     margin-bottom: 5px; /* spacing outside border against the bottom */
 }
@@ -143,14 +140,13 @@ element with a class attribute equal to a certain value.*/
 {
     grid-column: 2;
     grid-row: 2;
-    margin-top: -370px; /* spacing outside border against the top */
-    margin-bottom: 370px; /* spacing outside border against the bottom */
-}
+    margin-top: -300px; /* spacing outside border against the top */
+    margin-bottom: 300px; /* spacing outside border against the bottom */}
 
 #myThirdProjectParagraph
 {
     width: 80%;
-    background-color: #5BC0EB;
+    background-color: white;
     border: 0.2em black solid;
     margin-bottom: 5px; /* spacing outside border against the bottom */
 }
@@ -165,7 +161,7 @@ element with a class attribute equal to a certain value.*/
 #myFourthProjectParagraph
 {
     width: 80%; /* width is in percent of the containing block*/
-    background-color: #5BC0EB;
+    background-color: white;
     border: 0.2em black solid;
     margin-bottom: 5px; /* spacing outside border against the bottom */
 }
@@ -177,9 +173,9 @@ element with a class attribute equal to a certain value.*/
     grid-template-rows: 0.5fr 0.5fr; /* set sizing for grid rows */
     column-gap:1%; /* adjust the space between each column in the grid */
     row-gap: 100px; /* adjust the space between each row in the grid*/
-    font-family: 'Noto Sans HK', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     border:0.2em black solid; /* set border width, color, and style in border shorthand*/
-    background-image: linear-gradient(#FA8334, white, #FA8334);
+    background-color: white;
 }
 
 #GetToKnowMeHeading
@@ -203,7 +199,7 @@ element with a class attribute equal to a certain value.*/
 
 #basicFactsHeading
 {
-    background-color: #5BC0EB;
+    background-color: white;
     color: black;
     border: 0.2em black solid;
     margin-bottom: 5px;
@@ -214,7 +210,7 @@ element with a class attribute equal to a certain value.*/
 {
     list-style-type: disc; /* hides the little dot next to each list item*/
     line-height: 40px; /* specifies the height of a line (spacing between each item).*/
-    background-color: #5BC0EB;
+    background-color: white;
     border: 0.2em black solid;
 }
 
@@ -235,7 +231,7 @@ element with a class attribute equal to a certain value.*/
 
 #tutorMissionHeading
 {
-    background-color: #5BC0EB;
+    background-color: white;
     color: black;
     border: 0.2em black solid; /* set border width, color, and style in border shorthand*/
     margin-bottom: 5px;
@@ -244,7 +240,7 @@ element with a class attribute equal to a certain value.*/
 
 #tutorMissionParagraph
 {
-    background-color: #5BC0EB;
+    background-color: white;
     border: 0.2em black solid; /* set border width, color, and style in border shorthand*/
 }
 
@@ -275,7 +271,7 @@ element with a class attribute equal to a certain value.*/
 
 #myPortfolioSitesHeading
 {
-    background-color: #5BC0EB;
+    background-color: white;
     color: black;     /* adjusted text colors for heading text */
     border: 0.2em black solid; /* set border width, color, and style in border shorthand*/
     margin-bottom: 5px;  /* spacing outside border against the bottom */
@@ -326,9 +322,9 @@ element with a class attribute equal to a certain value.*/
     grid-template-rows: 1fr 1fr 1fr; /* set sizing for grid rows */
     column-gap:1%; /* adjust the space between each column in the grid */
     row-gap: 50px; /* adjust the space between each row in the grid*/
-    font-family: 'Noto Sans HK', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     border:0.2em black solid; /* set border width, color, and style in border shorthand*/
-    background-image: linear-gradient(#FA8334, white, #FA8334);
+    background-image: white;
 }
 
 #TestimonialsHeading2
@@ -347,7 +343,7 @@ element with a class attribute equal to a certain value.*/
     margin-bottom: 300px;  /* spacing outside border against the bottom */
     margin-left: 5%; /* spacing outside border against the left */
     margin-right: -5%; /* spacing outside border against the right */
-    background-color: #5BC0EB;
+    background-color: white;
     color: black;
     border: 0.2em black solid; /* adjust border size, color, shape */
 }
@@ -361,7 +357,7 @@ element with a class attribute equal to a certain value.*/
     margin-bottom: 300px;
     margin-left: 5%;
     margin-right: -5%;
-    background-color: #5BC0EB;
+    background-color: white;
     color: black;
     border: 0.2em black solid;
 
@@ -375,7 +371,7 @@ element with a class attribute equal to a certain value.*/
     margin-bottom: 50px;
     margin-left: 5%;
     margin-right: -5%;
-    background-color: #5BC0EB;
+    background-color: white;
     color: black;
     border: 0.2em black solid;
 }
@@ -386,9 +382,9 @@ element with a class attribute equal to a certain value.*/
     grid-template-columns: 1fr 1fr 1fr; /* set sizing for grid columns */
     grid-template-rows: 1fr; /* set sizing for grid rows */
     column-gap:1%; /* adjust the space between each column in the grid */
-    font-family: 'Noto Sans HK', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     border:0.2em black solid; /* set border width, color, and style in border shorthand*/
-    background-image: linear-gradient(#FA8334, white, #FA8334);
+    background-color: white;
 }
 
 
@@ -404,7 +400,7 @@ element with a class attribute equal to a certain value.*/
 {
     grid-column: 1;
     grid-row: 2;
-    background-color: #5BC0EB;
+    background-color: white;
     margin-bottom: 50px;
     margin-left: 2%;
     width: 100%;
@@ -437,7 +433,7 @@ element with a class attribute equal to a certain value.*/
 {
     grid-column: 2;
     grid-row: 2;  
-    background-color: #5BC0EB;
+    background-color: white;
     margin-bottom: 50px;
     border:0.2em black solid; /* set border width, color, and style in border shorthand*/
 }
@@ -467,7 +463,7 @@ element with a class attribute equal to a certain value.*/
 {
     grid-column: 3;
     grid-row: 2;
-    background-color: #5BC0EB;
+    background-color: white;
     margin-bottom: 50px;
     margin-right: 2%;
     border:0.2em black solid; /* set border width, color, and style in border shorthand*/
@@ -497,9 +493,9 @@ element with a class attribute equal to a certain value.*/
     grid-template-columns: 3fr 1fr 3fr; /* set sizing for grid columns */
     grid-template-rows: 1fr 1fr; /* set sizing for grid rows */
     column-gap:1%; /* adjust the space between each column in the grid */
-    font-family: 'Noto Sans HK', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     border:0.2em black solid; /* set border width, color, and style in border shorthand*/
-    background-image: linear-gradient(#FA8334, white, #FA8334);
+    background-color: white;
 }
 
 #tutoringServicesHeading
@@ -514,10 +510,10 @@ element with a class attribute equal to a certain value.*/
 {
     grid-column: 1;
     grid-row: 2;
-    margin-top: -400px;
-    margin-bottom: 400px;
+    margin-top: -300px;
+    margin-bottom: 300px;
     margin-left: 10%;
-    background-color: #5BC0EB;
+    background-color: white;
     border:0.2em black solid; /* set border width, color, and style in border shorthand*/
 
 }
@@ -548,7 +544,7 @@ element with a class attribute equal to a certain value.*/
     margin-top: -250px;
     margin-bottom: 250px;
     margin-left: 10%;
-    background-color: #5BC0EB;
+    background-color: white;
     border:0.2em black solid; /* set border width, color, and style in border shorthand*/
 
 }
@@ -575,10 +571,10 @@ element with a class attribute equal to a certain value.*/
 {
     grid-column: 3;
     grid-row: 2;
-    margin-top: -400px;
-    margin-bottom: 400px;
+    margin-top: -300px;
+    margin-bottom: 300px;
     margin-right: 10%;
-    background-color: #5BC0EB;
+    background-color: white;
     border:0.2em black solid; /* set border width, color, and style in border shorthand*/
 
 }
@@ -611,7 +607,7 @@ element with a class attribute equal to a certain value.*/
     margin-top: -250px;
     margin-bottom: 250px;
     margin-right: 10%;
-    background-color: #5BC0EB;
+    background-color: white;
     border:0.2em black solid; /* set border width, color, and style in border shorthand*/
 
 }
@@ -642,17 +638,17 @@ element with a class attribute equal to a certain value.*/
 #mySiteFooter
 {
     /* adjusted color and text for the footer element*/
-    background-image: linear-gradient(#5BC0EB, white, #5BC0EB);
+    background-color: black;
     text-align: center;
     font-size: 1.5em;
-    font-family: 'Noto Sans HK', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 
 #copyrightText
 {
     /* adjusted text color of the copyright text */
-    color: black;
+    color: white;
 }
 
 /*
