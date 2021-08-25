@@ -37,6 +37,7 @@ element with a class attribute equal to a certain value.*/
     /* adjusted spacing between content and borders */
     padding-left: 350px;
     padding-top: 20px;
+    width: 110%;
 }
 
 #websiteTitle
