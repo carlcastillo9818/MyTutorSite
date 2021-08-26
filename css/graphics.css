@@ -21,11 +21,12 @@ element with a class attribute equal to a certain value.*/
 #mySiteHeader 
 {
     /* used a grid layout for the header */
-    background-color: #00C4FF;
+    /*background-color: #00C4FF; */
+    background-color: white;
     display: grid;
     grid-template-columns: 1fr 2fr;
     font-family: Arial, Helvetica, sans-serif;
-    color: #171F6E;
+    color: #525252;
 }
 
 #websiteMainLogoAside
@@ -84,7 +85,7 @@ element with a class attribute equal to a certain value.*/
     row-gap: 50px; /* adjust the space between each row in the grid*/
     font-family: Arial, Helvetica, sans-serif;
     border:0.2em black solid; /* set border width, color, and style in border shorthand*/
-    background-color: #00C4FF;
+    background-color: #004ECC;
     width: 105%; /* for mobile viewing */
     height: fit-content; /* for mobile viewing */
     overflow: hidden; /* for mobile viewing */
@@ -98,16 +99,15 @@ element with a class attribute equal to a certain value.*/
     grid-row:1; /* specifies size and location of the item within grid row */
     font-size: 2.5em;
     text-align: center;
-    color: #171F6E;
+    color: white;
 }
 
 .EachIndividualProjectHeading
 {
-    background-color: white;
-    color: black;
-    border: 0.2em black solid;
+    color: white;
     margin-bottom: 5px;
     margin-right: 20%;
+    font-size: 1.5em;
 }
 
 #myFirstProject
@@ -118,13 +118,12 @@ element with a class attribute equal to a certain value.*/
     margin-bottom: 300px; /* spacing outside border against the bottom */
     margin-left: 5%;
     margin-right: -20%;
+    color: white;
 }
 
 #myFirstProjectParagraph
 {
     width: 80%;
-    background-color: white;
-    border: 0.2em black solid;
     margin-bottom: 5px; /* spacing outside border against the bottom */
 }
 
@@ -135,13 +134,13 @@ element with a class attribute equal to a certain value.*/
     margin-top: -300px; /* spacing outside border against the top */
     margin-left: 5%;
     margin-right: -20%;
+    color: white;
 }
 
 #mySecondProjectParagraph
 {
     width: 80%;
-    background-color: white;
-    border: 0.2em black solid;
+
     margin-bottom: 5px; /* spacing outside border against the bottom */
 }
 
@@ -152,14 +151,14 @@ element with a class attribute equal to a certain value.*/
     margin-top: -300px; /* spacing outside border against the top */
     margin-bottom: 300px; /* spacing outside border against the bottom */
     margin-left: 25%;
+    color: white;
 }
 
 
 #myThirdProjectParagraph
 {
     width: 80%;
-    background-color: white;
-    border: 0.2em black solid;
+
     margin-bottom: 5px; /* spacing outside border against the bottom */
 }
 
@@ -168,15 +167,13 @@ element with a class attribute equal to a certain value.*/
     grid-column: 3;
     grid-row: 3;    
     margin-top: -300px; /* spacing outside border against the top */
-
+    color: white;
     margin-left: 25%;
 }
 
 #myFourthProjectParagraph
 {
     width: 80%; /* width is in percent of the containing block*/
-    background-color: white;
-    border: 0.2em black solid;
     margin-bottom: 5px; /* spacing outside border against the bottom */
 }
 
@@ -666,14 +663,18 @@ element with a class attribute equal to a certain value.*/
 .footerHyperLink
 {
     /* adjusted text colors for hyperlinks in footer menu */
-    color: #171F6E;
+    color: black;
 }
 
 #copyrightText
 {
     /* adjusted text color of the copyright text */
-    color: #171F6E;
+    color: black;
 }
+
+/* 8-26-21 Thanks to my girlfriend M.D
+for the new color suggestion!
+*/
 
 /*
 https://www.jsdiaries.com/how-to-remove-html-purple-link-an-easy-solution/
