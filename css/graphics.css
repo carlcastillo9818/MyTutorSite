@@ -88,6 +88,7 @@ element with a class attribute equal to a certain value.*/
     width: 105%; /* for mobile viewing */
     overflow: hidden; /* for mobile viewing */
     max-width: 1920px; /* for mobile viewing */
+    min-width: 750px; /* for mobile viewing */
 }
 
 #ProjectsHeading
