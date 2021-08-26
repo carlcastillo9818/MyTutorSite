@@ -85,6 +85,8 @@ element with a class attribute equal to a certain value.*/
     font-family: Arial, Helvetica, sans-serif;
     border:0.2em black solid; /* set border width, color, and style in border shorthand*/
     background-color: #00C4FF;
+    width: 100%; /* for mobile viewing */
+    overflow: hidden; /* for mobile viewing */
 }
 
 #ProjectsHeading
