@@ -21,10 +21,11 @@ element with a class attribute equal to a certain value.*/
 #mySiteHeader 
 {
     /* used a grid layout for the header */
-    background-color: white;
+    background-color: #00C4FF;
     display: grid;
     grid-template-columns: 1fr 2fr;
     font-family: Arial, Helvetica, sans-serif;
+    color: #171F6E;
 }
 
 #websiteMainLogoAside
@@ -53,12 +54,10 @@ element with a class attribute equal to a certain value.*/
 #myNavMenu
 {
     /* adjusted text and colors for the nav element */
-    background-color: black;
     text-align: center;
     font-size: 1.5em;
     font-family: Arial, Helvetica, sans-serif;
-    border: 0.2em black solid;
-
+    background-color:#171F6E;
 }
 
 .navBarListItem
@@ -74,7 +73,6 @@ element with a class attribute equal to a certain value.*/
 {
     /* adjusted text colors for hyperlinks in the nav menu and footer menu */
     color: white;
-
 }
 
 #myHomePageMain
@@ -86,7 +84,7 @@ element with a class attribute equal to a certain value.*/
     row-gap: 50px; /* adjust the space between each row in the grid*/
     font-family: Arial, Helvetica, sans-serif;
     border:0.2em black solid; /* set border width, color, and style in border shorthand*/
-    background-color: white;
+    background-color: #00C4FF;
 }
 
 #ProjectsHeading
@@ -95,6 +93,7 @@ element with a class attribute equal to a certain value.*/
     grid-row:1; /* specifies size and location of the item within grid row */
     font-size: 2.5em;
     text-align: center;
+    color: #171F6E;
 }
 
 .EachIndividualProjectHeading
@@ -147,7 +146,6 @@ element with a class attribute equal to a certain value.*/
     grid-row: 2;
     margin-top: -300px; /* spacing outside border against the top */
     margin-bottom: 300px; /* spacing outside border against the bottom */
-    margin-right: -15%;
     margin-left: 25%;
 }
 
@@ -165,8 +163,7 @@ element with a class attribute equal to a certain value.*/
     grid-column: 3;
     grid-row: 3;    
     margin-top: -300px; /* spacing outside border against the top */
-    margin-right: 10%;
-    margin-right: -15%;
+
     margin-left: 25%;
 }
 
@@ -187,7 +184,7 @@ element with a class attribute equal to a certain value.*/
     row-gap: 100px; /* adjust the space between each row in the grid*/
     font-family: Arial, Helvetica, sans-serif;
     border:0.2em black solid; /* set border width, color, and style in border shorthand*/
-    background-color: white;
+    background-color: #00C4FF;
 }
 
 #GetToKnowMeHeading
@@ -197,6 +194,7 @@ element with a class attribute equal to a certain value.*/
     font-size: 2.5em;
     text-align: center;
     margin-bottom:500px;
+    color: #171F6E;
 }
 
 #basicFactsSection
@@ -336,7 +334,7 @@ element with a class attribute equal to a certain value.*/
     row-gap: 50px; /* adjust the space between each row in the grid*/
     font-family: Arial, Helvetica, sans-serif;
     border:0.2em black solid; /* set border width, color, and style in border shorthand*/
-    background-image: white;
+    background-color: #00C4FF;
 }
 
 #TestimonialsHeading2
@@ -345,6 +343,7 @@ element with a class attribute equal to a certain value.*/
     grid-row: 1;  /* specifies size and location of the item within grid row */
     font-size: 2.5em;
     text-align: center; /* center the text */
+    color: #171F6E;
 }
 
 #vidtest1
@@ -396,7 +395,7 @@ element with a class attribute equal to a certain value.*/
     column-gap:1%; /* adjust the space between each column in the grid */
     font-family: Arial, Helvetica, sans-serif;
     border:0.2em black solid; /* set border width, color, and style in border shorthand*/
-    background-color: white;
+    background-color: #00C4FF;
 }
 
 
@@ -406,6 +405,7 @@ element with a class attribute equal to a certain value.*/
     grid-row: 1;  /* specifies size and location of the item within grid row */
     font-size: 2.5em;
     text-align: center; /* center the text */
+    color: #171F6E;
 }
 
 #socialmediasection
@@ -507,7 +507,7 @@ element with a class attribute equal to a certain value.*/
     column-gap:1%; /* adjust the space between each column in the grid */
     font-family: Arial, Helvetica, sans-serif;
     border:0.2em black solid; /* set border width, color, and style in border shorthand*/
-    background-color: white;
+    background-color: #00C4FF;
 }
 
 #tutoringServicesHeading
@@ -516,6 +516,8 @@ element with a class attribute equal to a certain value.*/
     grid-row: 1;
     font-size: 2.5em;
     text-align: center; /* center the text */
+    color: #171F6E;
+
 }
 
 #tutorSubjectsSection
@@ -650,17 +652,22 @@ element with a class attribute equal to a certain value.*/
 #mySiteFooter
 {
     /* adjusted color and text for the footer element*/
-    background-color: black;
+    background-color: white;
     text-align: center;
     font-size: 1.5em;
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.footerHyperLink
+{
+    /* adjusted text colors for hyperlinks in footer menu */
+    color: #171F6E;
+}
 
 #copyrightText
 {
     /* adjusted text color of the copyright text */
-    color: white;
+    color: #171F6E;
 }
 
 /*
