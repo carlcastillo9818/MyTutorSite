@@ -87,7 +87,7 @@ element with a class attribute equal to a certain value.*/
     background-color: #00C4FF;
     width: 105%; /* for mobile viewing */
     overflow: hidden; /* for mobile viewing */
-    max-width: 1920px;
+    max-width: 1920px; /* for mobile viewing */
 }
 
 #ProjectsHeading
