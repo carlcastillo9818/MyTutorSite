@@ -269,8 +269,9 @@ element with a class attribute equal to a certain value.*/
 {
     color: white;     /* adjusted text colors for heading text */
     margin-bottom: 5px;  /* spacing outside border against the bottom */
-    margin-right: 20%;
+    margin-right: 18%;
     font-size: 1.5em;
+    text-align: center;
 }
 
 #myPortfolioSitesUnorderedList
@@ -299,15 +300,14 @@ element with a class attribute equal to a certain value.*/
 
 #linkedinlogoImg
 {
-    width:80%; /* specifies the width of an image*/
-    background-color: white;  /* specify background color for the image */
-    
+    border: 0.2em black solid; /* set border width, color, and style in border shorthand*/
 }
 
 #githublogoImg
 {
-    width: 40%;
     background-color: white;  /* specify background color for the image */
+    border: 0.2em black solid; /* set border width, color, and style in border shorthand*/
+
 }
 
 #myTestimonialsPage
