@@ -8,6 +8,7 @@
     box-sizing:border-box;
     list-style: none;
 	font-size: 100%;
+    /* outline: 1px solid red;*/ /* USE THIS FOR TESTING PURPOSES ONLY*/
 
     /* set all CSS box properties to 0 and use border-box for box sizing so that
 the width and height properties (and min/max properties) of all elements includes content, padding and border.*/
