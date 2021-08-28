@@ -522,7 +522,7 @@ element with a class attribute equal to a certain value.*/
 {
     display: grid; /* divide page elements into columns and rows.*/
     grid-template-columns: 3fr 1fr 3fr; /* set sizing for grid columns */
-    grid-template-rows: 0.5fr 0.5fr 0.2fr; /* set sizing for grid rows */
+    grid-template-rows: 1fr 1fr; /* set sizing for grid rows */
     column-gap:1%; /* adjust the space between each column in the grid */
     font-family: Arial, Helvetica, sans-serif;
     background-color: #004ECC;
@@ -569,10 +569,11 @@ element with a class attribute equal to a certain value.*/
 {
     grid-column: 1;
     grid-row: 2;
-    margin-top: 50px;
     margin-bottom: 1px;
     margin-left: 10%;
     color: white;
+    margin-top: -270px;
+
 }
 
 #faqSectionHeading
@@ -593,90 +594,21 @@ element with a class attribute equal to a certain value.*/
     
 }
 
-#nonPackageSection
+#filloutForm
 {
-    grid-column: 3;
     grid-row: 1;
-    margin-top: 100px;
-    margin-right: 10%;
-    color: white;
-    padding: 0px; /* added this and overflow-x for avoiding white space in right side of screen */
-    overflow-x: hidden;
-
-}
-
-#nonPackageHeading
-{
-    border:0.2em black solid; /* set border width, color, and style in border shorthand*/
-    text-align: center;
-    font-size: 1.8em;
-}
-
-#nonPackageTABLE
-{
-    font-size: 1.4em;
-
-}
-
-.nonPackageHeaderCell
-{
-    border: 3px solid black;
-    
-
-}
-
-.nonPackageDataCell
-{
-    border: 3px solid black;   
-}
-
-.sessionInfoPara
-{
-    font-size: 1.1em;
-}
-
-#packageSection
-{
     grid-column: 3;
-    grid-row: 2;
-    margin-top: 50px;
-    margin-bottom: 400px;
-    margin-right: 10%;
-    color: white;
-    padding: 0px; /* added this and overflow-x for avoiding white space in right side of screen */
-    overflow-x: hidden;
+    margin-top: 100px;
+    overflow-x: hidden; 
+    width: 100%;
 }
 
-#packageHeading
-{
-    border:0.2em black solid; /* set border width, color, and style in border shorthand*/
-    text-align: center;
-    font-size: 1.8em;
-}
-
-#packageTABLE
-{
-    font-size: 1.4em;
-}
-
-.packageHeaderCell
-{
-    border: 3px solid black;
-
-}
-
-.packageDataCell
-{
-    border: 3px solid black;
-
-}
 
 #paypalSection
 {
     /* Which button did I use? I used the special button code from the paypal site */
-    grid-row: 3;
+    grid-row: 2;
     grid-column:3;
-    margin-top: -450px;
     margin-right: 10%;
     padding: 0px; /* added this and overflow-x for avoiding white space in right side of screen */
     overflow-x: hidden; 
