@@ -599,7 +599,6 @@ element with a class attribute equal to a certain value.*/
     grid-row: 1;
     grid-column: 3;
     margin-top: 100px;
-    overflow-x: hidden; 
     width: 100%;
 }
 
