@@ -600,6 +600,8 @@ element with a class attribute equal to a certain value.*/
     grid-column: 3;
     margin-top: 100px;
     width: 100%;
+    padding: 0px; /* added this and overflow-x for avoiding white space in right side of screen */
+    overflow-x: hidden; 
 }
 
 
