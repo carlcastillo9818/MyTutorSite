@@ -8,6 +8,7 @@
     box-sizing:border-box;
     list-style: none;
 	font-size: 100%;
+
     /* outline: 1px solid red;*/ /* USE THIS FOR TESTING PURPOSES ONLY*/
 
     /* set all CSS box properties to 0 and use border-box for box sizing so that
@@ -521,7 +522,7 @@ element with a class attribute equal to a certain value.*/
 {
     display: grid; /* divide page elements into columns and rows.*/
     grid-template-columns: 3fr 1fr 3fr; /* set sizing for grid columns */
-    grid-template-rows: 0.5fr 1fr; /* set sizing for grid rows */
+    grid-template-rows: 0.5fr 0.5fr 0.2fr; /* set sizing for grid rows */
     column-gap:1%; /* adjust the space between each column in the grid */
     font-family: Arial, Helvetica, sans-serif;
     background-color: #004ECC;
@@ -569,7 +570,7 @@ element with a class attribute equal to a certain value.*/
     grid-column: 1;
     grid-row: 2;
     margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 1px;
     margin-left: 10%;
     color: white;
 }
@@ -600,7 +601,8 @@ element with a class attribute equal to a certain value.*/
     margin-right: 10%;
     color: white;
     padding: 0px; /* added this and overflow-x for avoiding white space in right side of screen */
-    overflow-x: hidden; 
+    overflow-x: hidden;
+
 }
 
 #nonPackageHeading
@@ -638,16 +640,16 @@ element with a class attribute equal to a certain value.*/
     grid-column: 3;
     grid-row: 2;
     margin-top: 50px;
+    margin-bottom: 400px;
     margin-right: 10%;
     color: white;
     padding: 0px; /* added this and overflow-x for avoiding white space in right side of screen */
-    overflow-x: hidden; 
+    overflow-x: hidden;
 }
 
 #packageHeading
 {
     border:0.2em black solid; /* set border width, color, and style in border shorthand*/
-
     text-align: center;
     font-size: 1.8em;
 }
@@ -667,6 +669,24 @@ element with a class attribute equal to a certain value.*/
 {
     border: 3px solid black;
 
+}
+
+#paypalSection
+{
+    /* Which button did I use? I used the special button code from the paypal site */
+    grid-row: 3;
+    grid-column:3;
+    margin-top: -450px;
+    margin-right: 10%;
+    padding: 0px; /* added this and overflow-x for avoiding white space in right side of screen */
+    overflow-x: hidden; 
+}
+
+#tutoringSelectmsg
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5em;
+    color: white;
 }
 
 #mySiteFooter
