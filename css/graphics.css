@@ -665,7 +665,7 @@ for the new color suggestion!
     margin-bottom: 1px;
     margin-left: 10%;
     color: white;
-    margin-top: -850px;
+    margin-top: -840px;
 }
 
 
@@ -675,7 +675,7 @@ for the new color suggestion!
     grid-row: 2;
     grid-column:3;
     margin-right: 4%;
-    margin-top: -850px;
+    margin-top: -840px;
     padding: 0px; /* added this and overflow-x for avoiding white space in right side of screen */
     overflow-x: hidden; 
 }
