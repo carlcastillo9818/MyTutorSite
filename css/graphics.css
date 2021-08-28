@@ -392,7 +392,7 @@ element with a class attribute equal to a certain value.*/
 .testimonialVids
 {
     margin: 0 0 0 0;
-    width: 100%; /* including these to avoid white space in right side of screen */
+    width: 75%; /* including these to avoid white space in right side of screen */
 }
 
 #myContactPage
