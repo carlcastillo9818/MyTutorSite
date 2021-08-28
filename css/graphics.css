@@ -573,7 +573,6 @@ element with a class attribute equal to a certain value.*/
     margin-left: 10%;
     color: white;
     margin-top: -270px;
-
 }
 
 #faqSectionHeading
@@ -599,9 +598,7 @@ element with a class attribute equal to a certain value.*/
     grid-row: 1;
     grid-column: 3;
     margin-top: 100px;
-    width: 100%;
-    padding: 0px; /* added this and overflow-x for avoiding white space in right side of screen */
-    overflow-x: hidden; 
+
 }
 
 
@@ -647,3 +644,44 @@ element with a class attribute equal to a certain value.*/
 for the new color suggestion!
 */
 
+@media only screen and (max-width: 500px)  /* use this CSS for viewing on phone */
+{
+
+
+#filloutForm
+{
+    width:100%; 
+    height:730px;
+    overflow:auto;
+    padding-right: 250px;
+    border: 0em;
+}
+
+
+#faqSection
+{
+    grid-column: 1;
+    grid-row: 2;
+    margin-bottom: 1px;
+    margin-left: 10%;
+    color: white;
+    margin-top: -900px;
+}
+
+
+#paypalSection
+{
+    /* Which button did I use? I used the special button code from the paypal site */
+    grid-row: 2;
+    grid-column:3;
+    margin-right: 4%;
+    margin-top: -900px;
+    padding: 0px; /* added this and overflow-x for avoiding white space in right side of screen */
+    overflow-x: hidden; 
+}
+
+#quantitySelect
+{
+    margin-top: 10px;
+}
+}
