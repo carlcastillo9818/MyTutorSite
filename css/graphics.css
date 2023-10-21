@@ -221,7 +221,7 @@ element with a class attribute equal to a certain value.*/
     margin-left: 6%;
 }
 
-#project4Heading {
+#project5Heading {
     color: white;
     margin-bottom: 5px;
     font-size: 1.5em;
@@ -229,8 +229,8 @@ element with a class attribute equal to a certain value.*/
     text-align: center;
 }
 
-#myFourthProjectParagraph {
-    width: 80%;
+#myFifthProjectParagraph {
+    width: 100%;
     /* width is in percent of the containing block*/
     margin-bottom: 5px;
     /* spacing outside border against the bottom */
