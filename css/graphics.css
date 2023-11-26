@@ -8,7 +8,7 @@
     box-sizing:border-box;
     list-style: none;
 	font-size: 100%;
-    outline: 1px solid red;
+    /*outline: 1px solid red;*/
     /*10-2-23 outline was used to find one of the elements thats causing that right side extra white space margin. 
     */
 
