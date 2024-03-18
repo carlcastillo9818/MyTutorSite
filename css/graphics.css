@@ -81,9 +81,8 @@ element with a class attribute equal to a certain value.*/
 {
     display: grid; /* divide page elements into columns and rows.*/
     grid-template-columns: 1fr 1fr 1fr; /* set sizing for grid columns */
-    grid-template-rows: 0.1fr 0.1fr 0.5fr; /* set sizing for grid rows */
+    grid-template-rows: 0.1fr 0.1fr 0.1fr; /* set sizing for grid rows */
     column-gap:1%; /* adjust the space between each column in the grid */
-    row-gap: 10px; /* adjust the space between each row in the grid*/
     font-family: Arial, Helvetica, sans-serif;
     background-color: #004ECC;
 }
@@ -110,31 +109,31 @@ element with a class attribute equal to a certain value.*/
 {
     color: white;
     margin-bottom: 5px;
+    text-align: center;
     font-size: 1.5em; /* make the headings bigger than the paragraph text!!!*/
-
 }
 
 #myFirstProjectParagraph
 {
-    width: 80%;
     margin-bottom: 5px; /* spacing outside border against the bottom */
     text-align: center;
     border: 0.2em black solid;
 }
 
+#firstprojvid {
+    width: 100%;
+}
+
 #mySecondProject
 {
-    grid-column: 3;
+    grid-column: 2;
     grid-row: 2;
-    margin-left: 1%;
-    margin-right: 20%;
     color: white;
-
+    margin-bottom: 300px;
 }
 
 #project2Heading
 {
-    
     color: white;
     margin-bottom: 5px;
     font-size: 1.5em; /* make the headings bigger than the paragraph text!!!*/
@@ -155,8 +154,7 @@ element with a class attribute equal to a certain value.*/
 
 #myThirdProject
 {
-    
-    grid-column: 2;
+    grid-column: 3;
     grid-row: 2;
     color: white;
     margin-bottom: 300px;
@@ -174,14 +172,13 @@ element with a class attribute equal to a certain value.*/
 {
     /* set border width, color, and style in border shorthand*/
     border: 0.2em black solid;
-    width: 100%;
     margin-bottom: 5px; /* spacing outside border against the bottom */
     text-align: center;
 }
 
 #thirdprojectvid
 {
-    margin-top: 10px;
+    width: 100%;
 }
 
 #myFourthProject
@@ -191,8 +188,8 @@ element with a class attribute equal to a certain value.*/
     grid-row: 3;
     /* specifies size and location of the item within grid row */
     color: white;
-    margin-right: 8%;
     margin-left: 6%;
+    margin-top: -300px;
 }
 
 #project4Heading
@@ -205,10 +202,13 @@ element with a class attribute equal to a certain value.*/
 
 #myFourthProjectParagraph
 {
-    width: 80%; /* width is in percent of the containing block*/
     margin-bottom: 5px; /* spacing outside border against the bottom */
     border: 0.2em black solid;
     text-align: center;
+}
+
+#fourthprojectvid {
+    width: 100%;
 }
 
 #myFifthProject {
@@ -217,8 +217,7 @@ element with a class attribute equal to a certain value.*/
     grid-row: 3;
     /* specifies size and location of the item within grid row */
     color: white;
-    margin-right: 8%;
-    margin-left: 6%;
+    margin-top: -300px;
 }
 
 #project5Heading {
@@ -230,12 +229,15 @@ element with a class attribute equal to a certain value.*/
 }
 
 #myFifthProjectParagraph {
-    width: 100%;
     /* width is in percent of the containing block*/
     margin-bottom: 5px;
     /* spacing outside border against the bottom */
     border: 0.2em black solid;
     text-align: center;
+}
+
+#fifthprojectvid {
+    width: 100%;
 }
 
 #mySixthProject {
@@ -244,8 +246,7 @@ element with a class attribute equal to a certain value.*/
     grid-row: 3;
     /* specifies size and location of the item within grid row */
     color: white;
-    margin-right: 1%;
-    margin-left: 6%;
+    margin-top: -300px;
 }
 
 #project6Heading {
@@ -257,12 +258,15 @@ element with a class attribute equal to a certain value.*/
 }
 
 #mySixthProjectParagraph {
-    width: 100%;
     /* width is in percent of the containing block*/
     margin-bottom: 5px;
     /* spacing outside border against the bottom */
     border: 0.2em black solid;
     text-align: center;
+}
+
+#sixthprojectvid {
+    width: 100%;
 }
 
 /* maybe safe to delete, check on this later 10-2-23 */
