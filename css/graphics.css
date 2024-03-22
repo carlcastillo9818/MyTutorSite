@@ -60,21 +60,164 @@ element with a class attribute equal to a certain value.*/
     font-family: Arial, Helvetica, sans-serif;
     background-color:#171F6E;
     border:0.2em black solid; /* set border width, color, and style in border shorthand*/
+    /* source for keeping navbar following user : https: //stackoverflow.com/questions/65549123/how-to-make-navbar-stay-fixed-when-scrolling */
+    position: sticky;
+    top: 0;
+}
+
+
+/*
+=============== 
+Variables for navbar and links
+===============
+
+source of code from this video: https: //www.youtube.com/watch?v=3PHXvlpOkf4&t=4308s
+website to get icons to put in css code : https: //fontawesome.com/v4/
+*/
+
+:root {
+    /* dark shades of primary color*/
+    --clr-primary-1: hsl(205, 86%, 17%);
+    --clr-primary-2: hsl(205, 77%, 27%);
+    --clr-primary-3: hsl(205, 72%, 37%);
+    --clr-primary-4: hsl(205, 63%, 48%);
+    /* primary/main color */
+    --clr-primary-5: hsl(205, 78%, 60%);
+    /* lighter shades of primary color */
+    --clr-primary-6: hsl(205, 89%, 70%);
+    --clr-primary-7: hsl(205, 90%, 76%);
+    --clr-primary-8: hsl(205, 86%, 81%);
+    --clr-primary-9: hsl(205, 90%, 88%);
+    --clr-primary-10: hsl(205, 100%, 96%);
+    /* darkest grey - used for headings */
+    --clr-grey-1: hsl(209, 61%, 16%);
+    --clr-grey-2: hsl(211, 39%, 23%);
+    --clr-grey-3: hsl(209, 34%, 30%);
+    --clr-grey-4: hsl(209, 28%, 39%);
+    /* grey used for paragraphs */
+    --clr-grey-5: hsl(210, 22%, 49%);
+    --clr-grey-6: hsl(209, 23%, 60%);
+    --clr-grey-7: hsl(211, 27%, 70%);
+    --clr-grey-8: hsl(210, 31%, 80%);
+    --clr-grey-9: hsl(212, 33%, 89%);
+    --clr-grey-10: hsl(210, 36%, 96%);
+    --clr-white: #fff;
+    --clr-red-dark: hsl(360, 67%, 44%);
+    --clr-red-light: hsl(360, 71%, 66%);
+    --clr-green-dark: hsl(125, 67%, 44%);
+    --clr-green-light: hsl(125, 71%, 66%);
+    --clr-black: #222;
+    --ff-primary: "Roboto", sans-serif;
+    --ff-secondary: "Open Sans", sans-serif;
+    --transition: all 0.3s linear;
+    --spacing: 0.1rem;
+    --radius: 0.25rem;
+    --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    --max-width: 1170px;
+    --fixed-width: 620px;
+}
+
+.nav-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    
+}
+.nav-toggle {
+    font-size: 1.5rem;
+    color: var(--clr-white);
+    background: transparent;
+    border-color: transparent;
+    transition: var(--transition);
+    cursor: pointer;
+    
+}
+
+.nav-toggle:hover {
+    color: var(--clr-primary-1);
+    transform: rotate(90deg);
+}
+
+.links a {
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    letter-spacing: var(--spacing);
+    display: block;
+    padding: 0.3rem 1rem; /* adjust spacing of each link when browser window is small and hamburger menu has appeared already */
+    transition: var(--transition);
+}
+
+.links a:hover {
+    background: var(--clr-primary-8);
+    color: var(--clr-primary-5);
+    padding-left: 1.5rem;
+}
+
+.links {
+    height: 0;
+    overflow: hidden;
+    transition: var(--transition);
+}
+
+.show-links {
+    height: 10rem;
+}
+
+@media screen and (min-width: 800px) {
+    .nav-center {
+        max-width: 1170px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem;
+    }
+
+    .nav-header {
+        padding: 0;
+    }
+
+    .nav-toggle {
+        display: none;
+    }
+
+    .links {
+        height: auto;
+        display: flex;
+    }
+
+    .links a {
+        padding: 0;
+        margin: 0 0.5rem;
+    }
+
+    .links a:hover {
+        padding: 0;
+        background: transparent;
+    }
+
 
 }
 
 .navBarListItem
 {
     /* adjusted layout for each LIST ITEM in the nav element*/
-    display: inline-block; /* this layout gives side by side nav menu*/
-    margin-left: 3%;
-    margin-right: 3%;
+    margin-left: 5%;
+    margin-right: 2%;
 }
 
 .navBarHyperLink
 {
     /* adjusted text colors for hyperlinks in the nav menu and footer menu */
     color: white;
+    text-decoration: none;
+}
+
+.navBarHyperLink:hover {
+    /* adjusted text colors for hyperlinks in the nav menu and footer menu */
+    text-decoration: underline;
 }
 
 #myHomePageMain
@@ -603,8 +746,8 @@ element with a class attribute equal to a certain value.*/
 #myTutoringPage
 {
     display: grid; /* divide page elements into columns and rows.*/
-    grid-template-columns: 3fr 1fr 3fr; /* set sizing for grid columns */
-    grid-template-rows: 1fr 1fr; /* set sizing for grid rows */
+    grid-template-columns: 1fr 1fr 1fr; /* set sizing for grid columns */
+    grid-template-rows: 1fr; /* set sizing for grid rows */
     column-gap:1%; /* adjust the space between each column in the grid */
     font-family: Arial, Helvetica, sans-serif;
     background-color: #004ECC;
@@ -612,7 +755,7 @@ element with a class attribute equal to a certain value.*/
 
 #tutoringServicesHeading
 {
-    grid-column: 1 / 4;
+    grid-column: 2;
     grid-row: 1;
     font-size: 2.5em;
     text-align: center; /* center the text */
@@ -649,12 +792,11 @@ element with a class attribute equal to a certain value.*/
 
 #faqSection
 {
-    grid-column: 1;
-    grid-row: 2;
-    margin-bottom: 1px;
+    grid-column: 3;
+    grid-row: 1;
+    margin-top: 100px;
     margin-left: 10%;
     color: white;
-    margin-top: -270px;
 }
 
 #faqSectionHeading
@@ -663,43 +805,11 @@ element with a class attribute equal to a certain value.*/
     font-size: 1.8em;
 }
 
-#faqUL
-{
-    font-size: 1.4em;
-}
-
 .faqLISTITEM
 {
-    line-height: 150%; /* specifies the height of a line (spacing between each item).*/
     margin-left:5%;
-    
 }
 
-#filloutForm
-{
-    grid-row: 1;
-    grid-column: 3;
-    margin-top: 100px;
-
-}
-
-
-#paypalSection
-{
-    /* Which button did I use? I used the special button code from the paypal site */
-    grid-row: 2;
-    grid-column:3;
-    margin-right: 10%;
-    padding: 0px; /* added this and overflow-x for avoiding white space in right side of screen */
-    overflow-x: hidden; 
-}
-
-#tutoringSelectmsg
-{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 2.5em;
-    color: white;
-}
 
 #mySiteFooter
 {
@@ -722,48 +832,3 @@ element with a class attribute equal to a certain value.*/
     color: black;
 }
 
-/* 8-26-21 Thanks to my girlfriend M.D
-for the new color suggestion!
-*/
-
-@media only screen and (max-width: 500px)  /* use this CSS for viewing on phone */
-{
-
-
-#filloutForm
-{
-    width:100%; 
-    height:730px;
-    overflow:auto;
-    padding-right: 250px;
-    border: 0em;
-}
-
-
-#faqSection
-{
-    grid-column: 1;
-    grid-row: 2;
-    margin-bottom: 1px;
-    margin-left: 10%;
-    color: white;
-    margin-top: -840px;
-}
-
-
-#paypalSection
-{
-    /* Which button did I use? I used the special button code from the paypal site */
-    grid-row: 2;
-    grid-column:3;
-    margin-right: 4%;
-    margin-top: -840px;
-    padding: 0px; /* added this and overflow-x for avoiding white space in right side of screen */
-    overflow-x: hidden; 
-}
-
-#quantitySelect
-{
-    margin-top: 10px;
-}
-}

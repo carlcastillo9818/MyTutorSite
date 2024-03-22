@@ -5,6 +5,8 @@
         <meta charset = "utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link rel = "stylesheet" href = "css/graphics.css">
+        <!-- necessary for hamburger icon to show correctly -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
     </head>
     <body>
         <header id = "mySiteHeader">
@@ -12,13 +14,23 @@
             <h1 id = "websiteTitle">Carlos Castillo</h1>
         </header>
 
-        <nav id = "myNavMenu">
-            <ul>
-                <li class = "navBarListItem"><a class = "navBarHyperLink" href = "index.html">Home</a></li>
-                <li class = "navBarListItem"><a class = "navBarHyperLink" href = "aboutPage.html">About Me</a></li>
-                <li class = "navBarListItem"><a class = "navBarHyperLink" href = "testimonialsPage.html">Testimonials</a></li>
-                <li class = "navBarListItem"><a class = "navBarHyperLink" href = "contactPage.html">Contact Me</a></li>
-                <li class = "navBarListItem"><a class = "navBarHyperLink" href="tutoringServicesPage.html">Tutoring Services</a></li>
+        <nav id="myNavMenu">
+            <div class="nav-header">
+                <button class="nav-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <!--Container of links for a site. Usually contains a Link Menu-->
+            <ul class="links">
+                <!-- the link menu is here -->
+                <!-- anchor element - creates hyperlink to another page or file remember to include protocols http or https -->
+                <!-- relative hyperlink (links to pages on same computer) -->
+                <li class="navBarListItem"><a class="navBarHyperLink" href="index.html">Home</a></li>
+                <li class="navBarListItem"><a class="navBarHyperLink" href="aboutPage.html">About Me</a></li>
+                <li class="navBarListItem"><a class="navBarHyperLink" href="testimonialsPage.html">Testimonials</a></li>
+                <li class="navBarListItem"><a class="navBarHyperLink" href="contactPage.html">Contact Me</a></li>
+                <li class="navBarListItem"><a class="navBarHyperLink" href="tutoringServicesPage.html">Tutoring Services</a>
+                </li>
             </ul>
         </nav>
 
@@ -61,14 +73,19 @@
             <ul>
                 <!-- the link menu is here -->
                 <!-- anchor element - creates hyperlink to another page or file remember to include protocols http or https -->
-                <!-- relative hyperlink (links to pages on same computer) -->
-                <li><a class = "footerHyperLink" href="index.html">Home</a></li>
-                <li><a class = "footerHyperLink" href="aboutPage.html">About Me</a></li>
-                <li><a class = "footerHyperLink" href="testimonialsPage.html">Testimonials</a></li>
-                <li><a class = "footerHyperLink" href="contactPage.html">Contact Me</a></li>
-                <li><a class = "footerHyperLink" href="tutoringServicesPage.html">Tutoring Services</a></li>
-                <li><p id = "copyrightText">&copy; Copyright 2024 CarlCastillo.com</p></li>
+                <!-- relative hyperlink (links to pages on same computer) 
+                            OLD CODE BELOW COMMENTING IT OUT
+                            <li><a class = "footerHyperLink" href = "index.html">Home</a></li>
+                            <li><a class = "footerHyperLink" href = "aboutPage.html">About Me</a></li>
+                            <li><a class = "footerHyperLink" href = "testimonialsPage.html">Testimonials</a></li>
+                            <li><a class = "footerHyperLink" href = "contactPage.html">Contact Me</a></li>
+                            <li><a class = "footerHyperLink" href="tutoringServicesPage.html">Tutoring Services</a></li>
+                            -->
+                <li>
+                    <p id="copyrightText">&copy; Copyright 2024 CarlCastillo.com</p>
+                </li>
             </ul>
         </footer>
+        <script src="app.js"></script>
     </body>
 </html>
