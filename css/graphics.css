@@ -1,5 +1,59 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@900&display=swap');
 
+/*
+=============== 
+Variables for navbar and links
+===============
+
+source of code from this video: https: //www.youtube.com/watch?v=3PHXvlpOkf4&t=4308s
+website to get icons to put in css code : https: //fontawesome.com/v4/
+*/
+
+:root {
+    /* dark shades of primary color*/
+    --clr-primary-1: hsl(205, 86%, 17%);
+    --clr-primary-2: hsl(205, 77%, 27%);
+    --clr-primary-3: hsl(205, 72%, 37%);
+    --clr-primary-4: hsl(205, 63%, 48%);
+    /* primary/main color */
+    --clr-primary-5: hsl(205, 78%, 60%);
+    /* lighter shades of primary color */
+    --clr-primary-6: hsl(205, 89%, 70%);
+    --clr-primary-7: hsl(205, 90%, 76%);
+    --clr-primary-8: hsl(205, 86%, 81%);
+    --clr-primary-9: hsl(205, 90%, 88%);
+    --clr-primary-10: hsl(205, 100%, 96%);
+    /* darkest grey - used for headings */
+    --clr-grey-1: hsl(209, 61%, 16%);
+    --clr-grey-2: hsl(211, 39%, 23%);
+    --clr-grey-3: hsl(209, 34%, 30%);
+    --clr-grey-4: hsl(209, 28%, 39%);
+    /* grey used for paragraphs */
+    --clr-grey-5: hsl(210, 22%, 49%);
+    --clr-grey-6: hsl(209, 23%, 60%);
+    --clr-grey-7: hsl(211, 27%, 70%);
+    --clr-grey-8: hsl(210, 31%, 80%);
+    --clr-grey-9: hsl(212, 33%, 89%);
+    --clr-grey-10: hsl(210, 36%, 96%);
+    --clr-white: #fff;
+    --clr-red-dark: hsl(360, 67%, 44%);
+    --clr-red-light: hsl(360, 71%, 66%);
+    --clr-green-dark: hsl(125, 67%, 44%);
+    --clr-green-light: hsl(125, 71%, 66%);
+    --clr-black: #222;
+    --ff-primary: "Roboto", sans-serif;
+    --ff-secondary: "Open Sans", sans-serif;
+    --transition: all 0.3s linear;
+    --spacing: 0.1rem;
+    --radius: 0.25rem;
+    --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    --max-width: 1170px;
+    --fixed-width: 620px;
+}
+
+
+
 *
 {
     padding:0;
@@ -55,68 +109,15 @@ element with a class attribute equal to a certain value.*/
 #myNavMenu
 {
     /* adjusted text and colors for the nav element */
-    text-align: center;
     font-size: 1.5em;
     font-family: Arial, Helvetica, sans-serif;
     background-color:#171F6E;
-    border:0.2em black solid; /* set border width, color, and style in border shorthand*/
+    border:0.1em black solid; /* set border width, color, and style in border shorthand*/
     /* source for keeping navbar following user : https: //stackoverflow.com/questions/65549123/how-to-make-navbar-stay-fixed-when-scrolling */
     position: sticky;
     top: 0;
 }
 
-
-/*
-=============== 
-Variables for navbar and links
-===============
-
-source of code from this video: https: //www.youtube.com/watch?v=3PHXvlpOkf4&t=4308s
-website to get icons to put in css code : https: //fontawesome.com/v4/
-*/
-
-:root {
-    /* dark shades of primary color*/
-    --clr-primary-1: hsl(205, 86%, 17%);
-    --clr-primary-2: hsl(205, 77%, 27%);
-    --clr-primary-3: hsl(205, 72%, 37%);
-    --clr-primary-4: hsl(205, 63%, 48%);
-    /* primary/main color */
-    --clr-primary-5: hsl(205, 78%, 60%);
-    /* lighter shades of primary color */
-    --clr-primary-6: hsl(205, 89%, 70%);
-    --clr-primary-7: hsl(205, 90%, 76%);
-    --clr-primary-8: hsl(205, 86%, 81%);
-    --clr-primary-9: hsl(205, 90%, 88%);
-    --clr-primary-10: hsl(205, 100%, 96%);
-    /* darkest grey - used for headings */
-    --clr-grey-1: hsl(209, 61%, 16%);
-    --clr-grey-2: hsl(211, 39%, 23%);
-    --clr-grey-3: hsl(209, 34%, 30%);
-    --clr-grey-4: hsl(209, 28%, 39%);
-    /* grey used for paragraphs */
-    --clr-grey-5: hsl(210, 22%, 49%);
-    --clr-grey-6: hsl(209, 23%, 60%);
-    --clr-grey-7: hsl(211, 27%, 70%);
-    --clr-grey-8: hsl(210, 31%, 80%);
-    --clr-grey-9: hsl(212, 33%, 89%);
-    --clr-grey-10: hsl(210, 36%, 96%);
-    --clr-white: #fff;
-    --clr-red-dark: hsl(360, 67%, 44%);
-    --clr-red-light: hsl(360, 71%, 66%);
-    --clr-green-dark: hsl(125, 67%, 44%);
-    --clr-green-light: hsl(125, 71%, 66%);
-    --clr-black: #222;
-    --ff-primary: "Roboto", sans-serif;
-    --ff-secondary: "Open Sans", sans-serif;
-    --transition: all 0.3s linear;
-    --spacing: 0.1rem;
-    --radius: 0.25rem;
-    --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    --max-width: 1170px;
-    --fixed-width: 620px;
-}
 
 .nav-header {
     display: flex;
@@ -126,13 +127,14 @@ website to get icons to put in css code : https: //fontawesome.com/v4/
     
 }
 .nav-toggle {
-    font-size: 1.5rem;
-    color: var(--clr-white);
+    font-size: 2rem;
+    color: orange;
     background: transparent;
     border-color: transparent;
     transition: var(--transition);
     cursor: pointer;
-    
+    width: 100%;
+    height: 100%;
 }
 
 .nav-toggle:hover {
@@ -165,42 +167,6 @@ website to get icons to put in css code : https: //fontawesome.com/v4/
     height: 10rem;
 }
 
-@media screen and (min-width: 800px) {
-    .nav-center {
-        max-width: 1170px;
-        margin: 0 auto;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 1rem;
-    }
-
-    .nav-header {
-        padding: 0;
-    }
-
-    .nav-toggle {
-        display: none;
-    }
-
-    .links {
-        height: auto;
-        display: flex;
-    }
-
-    .links a {
-        padding: 0;
-        margin: 0 0.5rem;
-    }
-
-    .links a:hover {
-        padding: 0;
-        background: transparent;
-    }
-
-
-}
-
 .navBarListItem
 {
     /* adjusted layout for each LIST ITEM in the nav element*/
@@ -228,6 +194,7 @@ website to get icons to put in css code : https: //fontawesome.com/v4/
     column-gap:1%; /* adjust the space between each column in the grid */
     font-family: Arial, Helvetica, sans-serif;
     background-color: #004ECC;
+    width: 100%;
 }
 
 #ProjectsHeading
@@ -237,6 +204,7 @@ website to get icons to put in css code : https: //fontawesome.com/v4/
     font-size: 2.5em;
     color: white;
     text-align: center;
+    width: 100%;
 }
 
 #myFirstProject
@@ -757,7 +725,7 @@ website to get icons to put in css code : https: //fontawesome.com/v4/
 {
     grid-column: 2;
     grid-row: 1;
-    font-size: 2.5em;
+    font-size: 2.3em;
     text-align: center; /* center the text */
     color: white;
 }
@@ -766,16 +734,18 @@ website to get icons to put in css code : https: //fontawesome.com/v4/
 {
     grid-column: 1;
     grid-row: 1;
-    margin-top: 100px;
-    margin-left: 10%;
+    margin-top: 75px;
+    margin-left: 1%;
     color: white;
-}
+    border: 0.2em black solid;
+    /* set border width, color, and style in border shorthand*/
+    }
 
 #tutorSubjectsHeading
 {
     text-align: center;
     font-size: 1.8em;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 #tutorSubjectsUL
@@ -790,13 +760,16 @@ website to get icons to put in css code : https: //fontawesome.com/v4/
     list-style-type: disc;
 }
 
+
 #faqSection
 {
-    grid-column: 3;
+    grid-column: 2;
     grid-row: 1;
-    margin-top: 100px;
-    margin-left: 10%;
+    margin-top: 75px;
     color: white;
+    border: 0.2em black solid;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 #faqSectionHeading
@@ -805,11 +778,130 @@ website to get icons to put in css code : https: //fontawesome.com/v4/
     font-size: 1.8em;
 }
 
-.faqLISTITEM
-{
-    margin-left:5%;
+/* all CSS code for accordion buttons for FAQ section
+credits to the following source: https: //codepen.io/magraytariq/pen/QWOrBQE
+*/
+.accordion .accordion-item {
+    border-bottom: 1px solid black;
 }
 
+.accordion .accordion-item button[aria-expanded='true'] {
+    border-bottom: 1px solid #03b5d2;
+}
+
+.accordion button {
+    position: relative;
+    display: block;
+    text-align: left;
+    width: 100%;
+    padding: 0.9em 0;
+    color: white;
+    font-size: 1.0rem;
+    font-weight: 400;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.accordion button:hover,
+.accordion button:focus {
+    cursor: pointer;
+    color: cyan;
+}
+
+.accordion button:hover::after,
+.accordion button:focus::after {
+    cursor: pointer;
+    color: cyan;
+    border: 1px solid cyan;
+}
+
+.accordion button .accordion-title {
+    padding: 1em 1.5em 1em 0;
+}
+
+/* the little plus icon to the far right */
+.accordion button .icon {
+    display: inline-block;
+    position: absolute;
+    top: 22px;
+    right: -1px;
+    width: 22px;
+    height: 21px;
+    border: 1px solid;
+    border-radius: 22px;
+}
+
+.accordion button .icon::before {
+    display: block;
+    position: absolute;
+    content: '';
+    top: 9px;
+    left: 5px;
+    width: 10px;
+    height: 2px;
+    background: currentColor;
+}
+
+.accordion button .icon::after {
+    display: block;
+    position: absolute;
+    content: '';
+    top: 5px;
+    left: 9px;
+    width: 2px;
+    height: 10px;
+    background: currentColor;
+}
+
+
+
+/*after the accordion button has been pressed and answer is shown under question */
+.accordion button[aria-expanded='true'] {
+    color: cyan;
+}
+
+.accordion button[aria-expanded='true'] .icon::after {
+    width: 0;
+}
+
+.accordion button[aria-expanded='true']+.accordion-content {
+    opacity: 1;
+    max-height: 10em;
+    transition: all 200ms linear;
+    will-change: opacity, max-height;
+}
+
+.accordion .accordion-content {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 200ms linear, max-height 200ms linear;
+    will-change: opacity, max-height;
+}
+
+.accordion .accordion-content p {
+    font-size: 1rem;
+    font-weight: 300;
+    margin: 1em 0;
+}
+
+
+#gameSection {
+    grid-column: 3;
+    grid-row: 1;
+    margin-top: 75px;
+    color: white;
+    border: 0.2em black solid;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#gameSectionHeading {
+    text-align: center;
+    font-size: 1.8em;
+    text-decoration: none;
+}
 
 #mySiteFooter
 {
@@ -832,3 +924,124 @@ website to get icons to put in css code : https: //fontawesome.com/v4/
     color: black;
 }
 
+/*In addition to resize text and images,
+it is also common to use media queries in responsive web pages. 
+With media queries you can define completely different styles for different browser sizes.
+
+for example:
+With min-width, once I go smaller than n pixels, nav bar will change to hamburger menu.
+With max-width, once I go bigger than n pixels, nav bar will change to hamburger menu.
+
+Apply the logic above to other elements on your webpage.*/
+@media screen and (min-width: 500px) {
+    .nav-center {
+        max-width: 1170px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem;
+    }
+
+    .nav-header {
+        padding: 0;
+    }
+
+    .nav-toggle {
+        display: none;
+    }
+
+    .links {
+        height: auto;
+        display: flex;
+    }
+
+    .links a {
+        padding: 0;
+        margin: 0 0.5rem;
+    }
+
+    .links a:hover {
+        padding: 0;
+        background: transparent;
+    }
+}
+
+@media screen and (max-width:500px){
+    #myHomePageMain {
+            display: grid;
+            /* divide page elements into columns and rows.*/
+            grid-template-columns: 1fr;
+            /* set sizing for grid columns */
+            grid-template-rows: 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr;
+            /* set sizing for grid rows */
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #004ECC;
+            font-size: 1.5em;
+    }
+    #ProjectsHeading {
+        grid-column: 1;
+        /* specifies size and location of the item within grid column */
+        grid-row: 1;
+        /* specifies size and location of the item within grid row */
+        text-align: center;
+        }
+
+    #myFirstProject {
+        grid-column: 1;
+        /* specifies size and location of the item within grid column */
+        grid-row: 2;
+        /* specifies size and location of the item within grid row */
+        background-color: orange;
+        width: 90%;
+    }
+
+    #mySecondProject {
+        grid-column: 1;
+        /* specifies size and location of the item within grid column */
+        grid-row: 3;
+        /* specifies size and location of the item within grid row */
+        margin-left: 6%;
+        background-color: pink;
+        width: 90%;
+    }
+
+    #myThirdProject {
+        grid-column: 1;
+        /* specifies size and location of the item within grid column */
+        grid-row: 4;
+        /* specifies size and location of the item within grid row */
+        background-color: yellow;
+        margin-left: 6%;
+    }
+
+    #myFourthProject {
+        grid-column: 1;
+        /* specifies size and location of the item within grid column */
+        grid-row: 5;
+        /* specifies size and location of the item within grid row */
+        margin-left: 6%;
+        margin-top: 10px;
+        background-color: red;
+    }
+
+    #myFifthProject {
+        grid-column: 1;
+        /* specifies size and location of the item within grid column */
+        grid-row: 6;
+        /* specifies size and location of the item within grid row */
+        margin-left: 6%;
+        margin-top: 10px;
+        background-color: brown;
+    }
+
+    #mySixthProject {
+        grid-column: 1;
+        /* specifies size and location of the item within grid column */
+        grid-row: 7;
+        /* specifies size and location of the item within grid row */
+        margin-left: 6%;
+        margin-top: 10px;
+        background-color: green;
+    }
+}

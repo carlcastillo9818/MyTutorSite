@@ -6,7 +6,26 @@
 
 const navToggle = document.querySelector(".nav-toggle");
 const links = document.querySelector(".links");
+const items = document.querySelectorAll('.accordion button');
 
+/* this block of code is specifically for the tutoring services page sections*/
+function toggleAccordion() {
+    const itemToggle = this.getAttribute('aria-expanded');
+
+    for (i = 0; i < items.length; i++) {
+        items[i].setAttribute('aria-expanded', 'false');
+        console.log("hi");
+
+    }
+
+    if (itemToggle == 'false') {
+        this.setAttribute('aria-expanded', 'true');
+    }
+}
+
+items.forEach((item) => item.addEventListener('click', toggleAccordion));
+
+/* this block of code is for the nav bar on each page that will shrink to a hamburger menu when the window is small enough*/
 navToggle.addEventListener("click", function () {
     // console.log(links.classList);
     // console.log(links.classList.contains("random"));
@@ -18,3 +37,6 @@ navToggle.addEventListener("click", function () {
     // }
     links.classList.toggle("show-links");
 });
+
+
+

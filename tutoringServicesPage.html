@@ -3,7 +3,7 @@
     <head>
         <title>Tutoring Services</title>
         <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/graphics.css">
         <!-- necessary for hamburger icon to show correctly -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
@@ -49,18 +49,60 @@
 
             <!-- this second section is for frequently asked questions-->
             <section id = "faqSection">
-                <h3 id = "faqSectionHeading">F.A.Q. (Frequently Asked Questions)</h3>
-                <ul id = "faqUL">
-                    <li class="faqLISTITEM">Q.Is the first lesson free? <br /> A. YES, my first lesson for any subject is FREE so you can see if you like my tutoring or not.</li>
-                    <li><br /></li>
-                    <li class = "faqLISTITEM">Q.Which DAYS are you available for tutoring? <br /> A. I am currently available every day as of 3/1/24.</li>
-                    <li><br/></li>
-                    <li class="faqLISTITEM">Q. Which HOURS are you available for tutoring? <br />A. In regard to hours, I am available from 1PM to 7PM every day. 
-                        If I have an emergency then I will alert you through our preferred form of contact (email, phone, etc.) prior to the session.</li>
-                    <li><br /></li>
-                    <li class="faqLISTITEM">Q.How do I get started? <br />A. Contact me through email or text my phone number about tutoring. I will contact you ASAP about the free tutoring session for the subject you picked.  Second, if you choose to return for more lessons then you will have to pay for future sessions in advance through Paypal or Zelle.</li>
+                <h3 id = "faqSectionHeading">Frequently Asked Questions</h3>
+                <section class="accordion">
+                    <section class="accordion-item">
+                        <button id="accordion-button-1" aria-expanded="false">
+                            <span class="accordion-title">Is the first lesson free?</span>
+                            <span class="icon" aria-hidden="true"></span>
+                        </button>
+                        <section class="accordion-content">
+                            <p>YES, my first lesson for any subject is FREE so you can see if you like my tutoring or not.</p>
+                        </section>
+                    </section>
+                    <section class="accordion-item">
+                        <button id="accordion-button-2" aria-expanded="false">
+                            <span class="accordion-title">Which DAYS are you available for tutoring?</span>
+                            <span class="icon" aria-hidden="true"></span>
+                        </button>
+                        <section class="accordion-content">
+                            <p>I am currently available every day as of 3/1/24.</p>
+                        </section>
+                    </section>
+                    <section class="accordion-item">
+                        <button id="accordion-button-3" aria-expanded="false">
+                            <span class="accordion-title">Which HOURS are you available for tutoring?</span>
+                            <span class="icon" aria-hidden="true"></span>
+                        </button>
+                        <section class="accordion-content">
+                            <p>In regard to hours, I am available from 1PM to 7PM every day.
+                            If I have an emergency then I will alert you through our preferred form of contact (email, phone, etc.) prior to the
+                            session.
+                            </p>
+                        </section>
+                    </section>
+                    <section class="accordion-item">
+                        <button id="accordion-button-4" aria-expanded="false">
+                            <span class="accordion-title">What's the best way to reach out to you?</span>
+                            <span class="icon" aria-hidden="true"></span>
+                        </button>
+                        <section class="accordion-content">
+                            <p>Contact me through email or text my phone number about tutoring. I will contact you ASAP about the free tutoring session
+                            for the subject you picked. Second, if you choose to return for more lessons then you will have to pay for future
+                            sessions in advance through Paypal or Zelle.
+                            </p>
+                        </section>
+                    </section>
                     <!-- keep adding more questions and answers if you come up with any more.-->
-                </ul>
+                </section>
+            </section>
+
+            <!-- This third section is for a browser game that can be played on the page-->
+            <section id="gameSection">
+                <h3 id="gameSectionHeading">Browser game of the month</h3>
+                <iframe width="100%" height="315"
+                    src="https://www.onlinegames.io/games/2023/q2/geometry-dash-freezenova/index.html"
+                    allowfullscreen></iframe>
             </section>
         </main>
 
