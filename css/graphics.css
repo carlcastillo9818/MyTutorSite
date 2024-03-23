@@ -128,7 +128,7 @@ element with a class attribute equal to a certain value.*/
 }
 .nav-toggle {
     font-size: 2rem;
-    color: orange;
+    color: white;
     background: transparent;
     border-color: transparent;
     transition: var(--transition);
@@ -138,7 +138,7 @@ element with a class attribute equal to a certain value.*/
 }
 
 .nav-toggle:hover {
-    color: var(--clr-primary-1);
+    color: white;
     transform: rotate(90deg);
 }
 
@@ -393,7 +393,7 @@ element with a class attribute equal to a certain value.*/
     grid-template-columns: 1fr 0.5fr 1fr; /* set sizing for grid columns */
     grid-template-rows: 0.5fr 0.5fr; /* set sizing for grid rows */
     column-gap:1%; /* adjust the space between each column in the grid */
-    row-gap: 100px; /* adjust the space between each row in the grid*/
+    row-gap: 50px; /* adjust the space between each row in the grid*/
     font-family: Arial, Helvetica, sans-serif;
     background-color: #004ECC;
 }
@@ -404,7 +404,6 @@ element with a class attribute equal to a certain value.*/
     grid-row: 1;
     font-size: 2.5em;
     text-align: center;
-    margin-bottom:500px;
     color: white;
 }
 
@@ -472,6 +471,7 @@ element with a class attribute equal to a certain value.*/
 #tutorimagefile
 {
     border: 0.2em black solid; /* set border width, color, and style in border shorthand*/
+    width: 100%;
 }
 
 #myPortfolioSitesSection
@@ -968,16 +968,45 @@ Apply the logic above to other elements on your webpage.*/
 }
 
 @media screen and (max-width:500px){
-    #myHomePageMain {
+    #mySiteHeader {
+            /* used a grid layout for the header */
+            /*background-color: #00C4FF; */
+            background-color: white;
             display: grid;
-            /* divide page elements into columns and rows.*/
             grid-template-columns: 1fr;
-            /* set sizing for grid columns */
-            grid-template-rows: 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr;
-            /* set sizing for grid rows */
+            grid-template-rows: 1fr 1fr;
             font-family: Arial, Helvetica, sans-serif;
-            background-color: #004ECC;
-            font-size: 1.5em;
+            color: #525252;
+        }
+    
+    
+    #websiteMainLogoImg {
+        /* adjusted spacing between content and borders */
+        grid-column: 1;
+        grid-row: 1;
+        margin-left: 30%;
+        margin-right: 30%;
+    }
+
+    #websiteTitle {
+        /* adjusted different spacings and size of the site title at the top*/
+        font-size: 4em;
+        grid-column: 1;
+        grid-row: 2;
+        text-shadow: 2px 2px 3px black;
+        text-align: center;
+    }
+
+    #myHomePageMain {
+        display: grid;
+        /* divide page elements into columns and rows.*/
+        grid-template-columns: 1fr;
+        /* set sizing for grid columns */
+        grid-template-rows: 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr;
+        /* set sizing for grid rows */
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #004ECC;
+        font-size: 1.5em;
     }
     #ProjectsHeading {
         grid-column: 1;
@@ -994,6 +1023,7 @@ Apply the logic above to other elements on your webpage.*/
         /* specifies size and location of the item within grid row */
         background-color: orange;
         width: 90%;
+        margin-left: 6%;
     }
 
     #mySecondProject {
@@ -1013,6 +1043,7 @@ Apply the logic above to other elements on your webpage.*/
         /* specifies size and location of the item within grid row */
         background-color: yellow;
         margin-left: 6%;
+        width: 90%;
     }
 
     #myFourthProject {
@@ -1023,6 +1054,7 @@ Apply the logic above to other elements on your webpage.*/
         margin-left: 6%;
         margin-top: 10px;
         background-color: red;
+        width: 90%;
     }
 
     #myFifthProject {
@@ -1033,6 +1065,7 @@ Apply the logic above to other elements on your webpage.*/
         margin-left: 6%;
         margin-top: 10px;
         background-color: brown;
+        width: 90%;
     }
 
     #mySixthProject {
@@ -1043,5 +1076,144 @@ Apply the logic above to other elements on your webpage.*/
         margin-left: 6%;
         margin-top: 10px;
         background-color: green;
+        width: 90%;
     }
+
+
+    #myAboutPage {
+        display: grid;
+        /* divide page elements into columns and rows.*/
+        grid-template-columns: 1fr;
+        /* set sizing for grid columns */
+        grid-template-rows: 0.1fr 0.1fr 0.1fr 0.7fr 0.7fr;
+        /* adjust the space between each row in the grid*/
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #004ECC;
+        font-size: 1.5em;
+    }
+
+    #GetToKnowMeHeading {
+        grid-column: 1;
+        grid-row: 1;
+        text-align: center;
+        color: white;
+        margin-bottom: -20px;
+        width: 100%;
+    }
+
+    #basicFactsSection {
+        grid-column: 1;
+        /* specifies size and location of the item within grid column */
+        grid-row: 2;
+        margin-top: 1px;
+        margin-left: 5%;
+        width: 90%;
+    }
+
+    #basicFactsHeading {
+        color: white;
+        margin-bottom: 5px;
+        margin:0;
+        text-align: center;
+    }
+
+    #basicFactsUnorderedList {
+        line-height: 40px;
+        /* specifies the height of a line (spacing between each item).*/
+        color: white;
+    }
+
+    .basicFactsListItem {
+        list-style-type: disc;
+        margin-left: 2%;
+    }
+
+    #tutorMissionSection {
+        grid-column: 1;
+        /* specifies size and location of the item within grid column */
+        grid-row: 3;
+        /* specifies size and location of the item within grid row */
+        line-height: 50px;
+        /* specifies the height of a line (spacing between each item).*/
+        margin-left: 2%;
+        width: 90%;
+        text-align: center;
+    }
+
+    #tutorMissionHeading {
+        color: white;
+        margin-bottom: 5px;
+        margin: 0;
+        text-align: center;
+    }
+
+    #tutorPhotoSection {
+        grid-column: 1;
+        /* specifies size and location of the item within grid column */
+        grid-row: 4;
+        margin-top: 1px;
+        margin-left: 2%;
+        /* spacing outside border against the top */
+        width: 90%;
+        /* included width,height,padding,overflow x to fix white space issue on right side */
+        height: 100%;
+        padding: 5px;
+    }
+
+    #tutorimagefile {
+        /* specifies size and location of the item within grid row */
+        margin-left: 2%;
+        width: 100%;
+        border: 0.2em black solid;
+        /* set border width, color, and style in border shorthand*/
+    }
+
+    #myPortfolioSitesSection {
+        grid-column: 1;
+        grid-row: 5;
+        margin-left: 2%;
+        margin-bottom:100px;
+        width: 90%;
+        
+    }
+
+    #myPortfolioSitesHeading {
+        color: white;
+        /* adjusted text colors for heading text */
+        font-size: 1.5em;
+        text-align: center;
+        margin: 0;
+    }
+
+    #myPortfolioSitesUnorderedList {
+        list-style-type: none;
+        /* hides the little dot next to each list item*/
+        display: grid;
+        /* divide page elements into columns and rows.*/
+        grid-template-columns: 1fr 1fr;
+        /* set sizing for grid columns */
+        grid-template-rows:1fr;
+        /* set sizing for grid rows */
+        column-gap: 20%;
+        /* adjust the space between each column in the grid */
+    }
+
+    #firstPortfolioSite {
+        grid-column: 1;
+        /* specifies size and location of the item within grid column */
+        grid-row: 1;
+        /* specifies size and location of the item within grid row */
+        text-align: center;
+    }
+
+    #secondPortfolioSite {
+        grid-column: 2;
+        /* specifies size and location of the item within grid column */
+        grid-row: 1;
+        /* spacing outside border against the left */
+        text-align: center;
+    }
+
+
+
 }
