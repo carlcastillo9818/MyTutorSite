@@ -1021,7 +1021,6 @@ Apply the logic above to other elements on your webpage.*/
         /* specifies size and location of the item within grid column */
         grid-row: 2;
         /* specifies size and location of the item within grid row */
-        background-color: orange;
         width: 90%;
         margin-left: 6%;
     }
@@ -1032,7 +1031,6 @@ Apply the logic above to other elements on your webpage.*/
         grid-row: 3;
         /* specifies size and location of the item within grid row */
         margin-left: 6%;
-        background-color: pink;
         width: 90%;
     }
 
@@ -1041,7 +1039,6 @@ Apply the logic above to other elements on your webpage.*/
         /* specifies size and location of the item within grid column */
         grid-row: 4;
         /* specifies size and location of the item within grid row */
-        background-color: yellow;
         margin-left: 6%;
         width: 90%;
     }
@@ -1053,7 +1050,6 @@ Apply the logic above to other elements on your webpage.*/
         /* specifies size and location of the item within grid row */
         margin-left: 6%;
         margin-top: 10px;
-        background-color: red;
         width: 90%;
     }
 
@@ -1064,7 +1060,6 @@ Apply the logic above to other elements on your webpage.*/
         /* specifies size and location of the item within grid row */
         margin-left: 6%;
         margin-top: 10px;
-        background-color: brown;
         width: 90%;
     }
 
@@ -1075,7 +1070,6 @@ Apply the logic above to other elements on your webpage.*/
         /* specifies size and location of the item within grid row */
         margin-left: 6%;
         margin-top: 10px;
-        background-color: green;
         width: 90%;
     }
 
