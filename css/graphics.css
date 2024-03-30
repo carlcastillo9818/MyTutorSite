@@ -52,10 +52,6 @@ website to get icons to put in css code : https: //fontawesome.com/v4/
     --fixed-width: 620px;
 }
 
-html,
-body {
-    overflow-x: clip;
-}
 
 *
 {
@@ -468,7 +464,6 @@ element with a class attribute equal to a certain value.*/
     width: 100%; /* included width,height,padding,overflow x to fix white space issue on right side */
     height: 100%;
     padding: 0px;
-    overflow-x: hidden; 
 }
 
 #tutorimagefile
@@ -518,7 +513,6 @@ element with a class attribute equal to a certain value.*/
 {
     border: 0.2em black solid; /* set border width, color, and style in border shorthand*/
     padding: 0px;
-    overflow-x: hidden; 
 }
 
 #githublogoImg
@@ -526,7 +520,6 @@ element with a class attribute equal to a certain value.*/
     background-color: white;  /* specify background color for the image */
     border: 0.2em black solid; /* set border width, color, and style in border shorthand*/
     padding: 0px;
-    overflow-x: hidden; 
 }
 
 #myTestimonialsPage
@@ -724,14 +717,12 @@ element with a class attribute equal to a certain value.*/
     margin-right: 2%;
     border:0.2em black solid; /* set border width, color, and style in border shorthand*/
     padding: 0px;
-    overflow-x: hidden; 
 }
 
 #phoneimg
 {
     width: 100%; /* included width,height,padding,overflow x to fix white space issue on right side */
     padding: 0px; /* including these attributes to avoid whitespace on right side */
-    overflow-x: hidden; 
 }
 
 #phonenumberheading
@@ -1003,6 +994,10 @@ Apply the logic above to other elements on your webpage.*/
 }
 
 @media screen and (max-width:500px){
+    html,body {
+            overflow-x: hidden;
+    }
+
     #mySiteHeader {
             /* used a grid layout for the header */
             /*background-color: #00C4FF; */
@@ -1394,7 +1389,6 @@ Apply the logic above to other elements on your webpage.*/
         margin-left: 1%;
         margin-right: 1%;  
         border: 0.2em black solid;
-        overflow-x: hidden;
     }
 
     #phonepara {
