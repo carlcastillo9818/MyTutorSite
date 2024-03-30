@@ -530,7 +530,7 @@ element with a class attribute equal to a certain value.*/
 {
     display: grid; /* divide page elements into columns and rows.*/
     grid-template-columns: 1fr 1fr; /* set sizing for grid columns */
-    grid-template-rows: 1fr 1fr 1fr; /* set sizing for grid rows */
+    grid-template-rows: 0.1fr 1fr 1fr 1fr; /* set sizing for grid rows */
     column-gap:1%; /* adjust the space between each column in the grid */
     row-gap: 50px; /* adjust the space between each row in the grid*/
     font-family: Arial, Helvetica, sans-serif;
@@ -548,10 +548,8 @@ element with a class attribute equal to a certain value.*/
 
 #vidtest1
 {
-    grid-column: 1 / 2;
+    grid-column: 1;
     grid-row: 2;
-    margin-top: -350px; /* spacing outside border against the top */
-    margin-bottom: 300px;  /* spacing outside border against the bottom */
     text-align: center;
     color: white;
 }
@@ -559,24 +557,19 @@ element with a class attribute equal to a certain value.*/
 
 #vidtest2
 {
-    grid-column: 1 / 2;
+    grid-column: 1;
     grid-row: 3;
-    margin-top: -300px;
-    margin-bottom: 300px;
     color: white;
     text-align: center;
 }
 
 #vidtest3
 {
-    grid-column: 1 / 2;
+    grid-column: 1;
     grid-row: 4;
-    margin-top: -300px;
-    margin-bottom: 50px;
     color: white;
     text-align: center;
 }
-
 
 .vidtestheading
 {
@@ -587,6 +580,44 @@ element with a class attribute equal to a certain value.*/
 {
     margin: 0 0 0 0;
     width: 75%; /* including these to avoid white space in right side of screen */
+}
+
+
+#imgreviews1 {
+    grid-column: 2;
+    grid-row: 2;
+    color: white;
+    text-align: center;
+}
+
+.IRheading {
+    font-size: 1.5em;
+}
+
+#IR1img {
+    width: 100%;
+}
+
+#imgreviews2 {
+    grid-column: 2;
+    grid-row: 3;
+    color: white;
+    text-align: center;
+}
+
+#IR2img {
+    width: 100%;
+}
+
+#imgreviews3 {
+    grid-column: 2;
+    grid-row: 4;
+    color: white;
+    text-align: center;
+}
+
+#IR3img {
+    width: 100%;
 }
 
 #myContactPage
@@ -1368,6 +1399,104 @@ Apply the logic above to other elements on your webpage.*/
         padding: 1px;
     }
 
-    
+    #myTestimonialsPage {
+        display: grid;
+        /* divide page elements into columns and rows.*/
+        grid-template-columns: 1fr;
+        /* set sizing for grid columns */
+        grid-template-rows: 0.1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        /* set sizing for grid rows */
+        row-gap: 1px;
+        /* adjust the space between each row in the grid*/
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #004ECC;
+    }
 
+    #TestimonialsHeading2 {
+        grid-column: 1;
+        /* specifies size and location of the item within grid column */
+        grid-row: 1;
+        /* specifies size and location of the item within grid row */
+        font-size: 2.5em;
+        text-align: center;
+        /* center the text */
+        color: white;
+    }
+
+    #vidtest1 {
+        grid-column: 1;
+        grid-row: 2;
+        margin-top: 1px;
+        /* spacing outside border against the top */
+        margin-bottom: 1px;
+        /* spacing outside border against the bottom */
+        text-align: center;
+        color: white;
+    }
+
+    #vidtest2 {
+        grid-column: 1;
+        grid-row: 3;
+        margin-top: 1px;
+        margin-bottom: 1px;
+        color: white;
+        text-align: center;
+    }
+
+    #vidtest3 {
+        grid-column: 1;
+        grid-row: 4;
+        margin-top: 1px;
+        margin-bottom: 1px;
+        color: white;
+        text-align: center;
+    }
+
+
+    .vidtestheading {
+        font-size: 1.5em;
+    }
+
+    .testimonialVids {
+        margin: 0 0 0 0;
+        width: 75%;
+        /* including these to avoid white space in right side of screen */
+    }
+
+    #imgreviews1 {
+        grid-column: 1;
+        grid-row: 5;
+        color: white;
+        text-align: center;
+    }
+
+    .IRheading {
+        font-size: 1.5em;
+    }
+
+    #IR1img {
+        width: 100%;
+    }
+
+    #imgreviews2 {
+        grid-column: 1;
+        grid-row: 6;
+        color: white;
+        text-align: center;
+    }
+
+    #IR2img {
+        width: 100%;
+    }
+
+    #imgreviews3 {
+        grid-column: 1;
+        grid-row: 7;
+        color: white;
+        text-align: center;
+    }
+
+    #IR3img {
+        width: 100%;
+    }
 }
