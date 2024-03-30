@@ -52,7 +52,10 @@ website to get icons to put in css code : https: //fontawesome.com/v4/
     --fixed-width: 620px;
 }
 
-
+html,
+body {
+    overflow-x: clip;
+}
 
 *
 {
