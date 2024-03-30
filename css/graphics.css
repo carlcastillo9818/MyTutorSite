@@ -739,7 +739,7 @@ element with a class attribute equal to a certain value.*/
     color: white;
     border: 0.2em black solid;
     /* set border width, color, and style in border shorthand*/
-    }
+}
 
 #tutorSubjectsHeading
 {
@@ -934,6 +934,7 @@ With max-width, once I go bigger than n pixels, nav bar will change to hamburger
 
 Apply the logic above to other elements on your webpage.*/
 @media screen and (min-width: 500px) {
+    
     .nav-center {
         max-width: 1170px;
         margin: 0 auto;
@@ -997,6 +998,11 @@ Apply the logic above to other elements on your webpage.*/
         text-align: center;
     }
 
+    #myNavMenu {
+        margin-top: 1px;
+        z-index: 100;
+    }
+    
     #myHomePageMain {
         display: grid;
         /* divide page elements into columns and rows.*/
@@ -1208,6 +1214,69 @@ Apply the logic above to other elements on your webpage.*/
         text-align: center;
     }
 
+    #myTutoringPage {
+        display: grid;
+        /* divide page elements into columns and rows.*/
+        grid-template-columns: 1fr;
+        /* set sizing for grid columns */
+        grid-template-rows: 0.1fr 0.1fr 0.1fr 0.1fr;
 
+        /* adjust the space between each column in the grid */
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #004ECC;
+    }
+    
+    #tutoringServicesHeading {
+        grid-column: 1;
+        grid-row: 1;
+        font-size: 2.3em;
+        text-align: center;
+        /* center the text */
+        color: white;
+    }
 
+    #tutorSubjectsSection {
+        grid-column: 1;
+        grid-row: 2;
+        margin-top: 5px;
+        margin-left: 1%;
+        margin-bottom: 100px;
+        color: white;
+        border: 0.2em black solid;
+        /* set border width, color, and style in border shorthand*/
+    }
+
+    #faqSection {
+        grid-column: 1;
+        grid-row: 3;
+        color: white;
+        border: 0.2em black solid;
+        margin-left: 1%;
+        margin-top: 1px;
+        margin-bottom: 100px;
+    }
+
+    .accordion button {
+        position: relative;
+        display: block;
+        text-align: left;
+        width: 100%;
+        padding: 0.9em 0;
+        color: white;
+        font-size: 1.0rem;
+        font-weight: 400;
+        border: none;
+        background: none;
+        outline: none;
+    }
+
+    #gameSection {
+        grid-column: 1;
+        grid-row: 4;
+        margin-top: 5px;
+        color: white;
+        border: 0.2em black solid;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
 }
