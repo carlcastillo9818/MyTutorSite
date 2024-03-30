@@ -1279,4 +1279,95 @@ Apply the logic above to other elements on your webpage.*/
         padding-left: 5px;
         padding-right: 5px;
     }
+
+    #myContactPage {
+        display: grid;
+        /* divide page elements into columns and rows.*/
+        grid-template-columns: 1fr;
+        /* set sizing for grid columns */
+        grid-template-rows: 0.1fr 1fr 1fr 1fr;
+        /* adjust the space between each column in the grid */
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #004ECC;
+    }
+
+
+    #heading2contactme {
+        grid-column: 1;
+        /* specifies size and location of the item within grid column */
+        grid-row: 1;
+        /* specifies size and location of the item within grid row */
+        font-size: 2.5em;
+        text-align: center;
+        /* center the text */
+        color: white;
+    }
+
+    #socialmediasection {
+        grid-column: 1;
+        grid-row: 2;
+        color: white;
+        margin-top: 1px;
+        margin-bottom: 1px;
+        margin-left: 1%;
+        margin-right: 1%;
+        border: 0.2em black solid;
+        /* set border width, color, and style in border shorthand*/
+    }
+
+    #socialmediapara {
+        font-size: 1.2em;
+        padding: 1px;
+    }
+
+    #socialmediaul {
+        font-size: 1.2em;
+        padding: 2px;
+    }
+
+    .sociallink {
+        color: #FBFFBD;
+    }
+
+    #emailhyperlink {
+        color: #FBFFBD;
+        font-size: 1.2em;
+        padding: 2px;
+    }
+
+    #emailpara {
+        font-size: 1.2em;
+        padding: 1px;
+    }
+
+    #emailsection {
+        grid-column: 1;
+        grid-row: 3;
+        margin-top: 60px;
+        color: white;
+        margin-bottom: 1px;
+        margin-right: 1%;
+        border: 0.2em black solid;
+        /* set border width, color, and style in border shorthand*/
+        margin-left: 1%;
+    }
+
+    #phonesection {
+        grid-column: 1;
+        grid-row: 4;
+        color: white;
+        margin-bottom: 10px;
+        margin-left: 1%;
+        margin-right: 1%;  
+        border: 0.2em black solid;
+        overflow-x: hidden;
+    }
+
+    #phonepara {
+        font-size: 1.2em;             
+        padding: 1px;
+    }
+
+    
+
 }
