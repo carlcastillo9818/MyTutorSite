@@ -1026,7 +1026,6 @@ Apply the logic above to other elements on your webpage.*/
     #myNavMenu {
         margin-top: 1px;
         z-index: 500;
-        overflow-x: hidden; 
     }
     
     #myHomePageMain {
