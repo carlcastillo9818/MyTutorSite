@@ -994,10 +994,6 @@ Apply the logic above to other elements on your webpage.*/
 }
 
 @media screen and (max-width:500px){
-    html,body {
-            overflow-x: hidden;
-    }
-
     #mySiteHeader {
             /* used a grid layout for the header */
             /*background-color: #00C4FF; */
@@ -1029,7 +1025,8 @@ Apply the logic above to other elements on your webpage.*/
 
     #myNavMenu {
         margin-top: 1px;
-        z-index: 100;
+        z-index: 500;
+        overflow-x: hidden; 
     }
     
     #myHomePageMain {
