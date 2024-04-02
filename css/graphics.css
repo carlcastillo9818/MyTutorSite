@@ -994,10 +994,15 @@ Apply the logic above to other elements on your webpage.*/
 }
 
 @media screen and (max-width:500px){
+
+    /*
+    Sticky top bar If you want to have (position) sicky top bar then hidden value will break it. So use clip instead.
+    source : https: //stackoverflow.com/questions/46012482/unwanted-white-space-on-right-side-in-mobile-view
+    */
     html,body {
             overflow-x: clip;
     }
-    
+
     #mySiteHeader {
             /* used a grid layout for the header */
             /*background-color: #00C4FF; */
