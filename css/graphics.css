@@ -994,6 +994,10 @@ Apply the logic above to other elements on your webpage.*/
 }
 
 @media screen and (max-width:500px){
+    html,body {
+            overflow-x: clip;
+    }
+    
     #mySiteHeader {
             /* used a grid layout for the header */
             /*background-color: #00C4FF; */
