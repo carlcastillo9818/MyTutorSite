@@ -79,12 +79,12 @@ element with a class attribute equal to a certain value.*/
 {
     /* used a grid layout for the header */
     /*background-color: #00C4FF; */
-    background-color: white;
+    background-color: #004ECC;
     display: grid;
     grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
     grid-template-rows: 1fr;
     font-family: Arial, Helvetica, sans-serif;
-    color: #525252;
+    color: white;
 }
 
 
@@ -931,7 +931,7 @@ credits to the following source: https: //codepen.io/magraytariq/pen/QWOrBQE
 #mySiteFooter
 {
     /* adjusted color and text for the footer element*/
-    background-color: white;
+    background-color: #004ECC;
     text-align: center;
     font-size: 1.5em;
     font-family: Arial, Helvetica, sans-serif;
