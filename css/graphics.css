@@ -959,7 +959,6 @@ With max-width, once I go bigger than n pixels, nav bar will change to hamburger
 
 Apply the logic above to other elements on your webpage.*/
 @media screen and (min-width: 500px) {
-    
     .nav-center {
         max-width: 1170px;
         margin: 0 auto;
@@ -1006,12 +1005,12 @@ Apply the logic above to other elements on your webpage.*/
     #mySiteHeader {
             /* used a grid layout for the header */
             /*background-color: #00C4FF; */
-            background-color: white;
+            background-color: #004ECC;
             display: grid;
             grid-template-columns: 1fr;
             grid-template-rows: 1fr 1fr;
             font-family: Arial, Helvetica, sans-serif;
-            color: #525252;
+            color: white;
         }
     
     
