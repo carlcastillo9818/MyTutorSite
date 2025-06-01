@@ -52,7 +52,6 @@ website to get icons to put in css code : https: //fontawesome.com/v4/
     --fixed-width: 620px;
 }
 
-
 *
 {
     padding:0;
@@ -185,76 +184,85 @@ element with a class attribute equal to a certain value.*/
     text-decoration: underline;
 }
 
-#myHomePageMain
-{
-    display: grid; /* divide page elements into columns and rows.*/
-    grid-template-columns: 1fr 1fr 1fr; /* set sizing for grid columns */
-    grid-template-rows: 0.1fr 0.1fr 0.1fr; /* set sizing for grid rows */
-    column-gap:1%; /* adjust the space between each column in the grid */
+#myHomePageMain {
+    display: grid;
+    grid-template-columns: 1fr; /* Keep a single-column layout */
+    grid-template-rows: auto; /* Allow flexible row height */
+    column-gap: 0; /* Removes extra space */
+    justify-content: center; /* Centers grid content */
     font-family: Arial, Helvetica, sans-serif;
     background-color: #004ECC;
     width: 100%;
 }
 
-#ProjectsHeading
-{
-    grid-column: 2; /* specifies size and location of the item within grid column */
-    grid-row:1; /* specifies size and location of the item within grid row */
+#ProjectsHeading {
+    grid-column: 1;
+    /* specifies size and location of the item within grid column */
+    grid-row: 1;
+    /* specifies size and location of the item within grid row */
     font-size: 2.5em;
     color: white;
     text-align: center;
     width: 100%;
 }
 
-#myFirstProject
-{
-    grid-column: 1; /* specifies size and location of the item within grid column */
-    grid-row: 2; /* specifies size and location of the item within grid row */
-    margin-left: 6%;
-    color: white;
-    margin-bottom: 300px;
-}
-
-#project1Heading
-{
-    color: white;
-    margin-bottom: 5px;
+/* the CSS code here is specifically applying to the sections of the homepage which are now in a 'carousel' style format to allow users to view each project one at a time by clicking left and right buttons
+that will move and show each project like an image slideshow but instead with youtube videos and descriptions underneath them. */
+.carousel-container {
+    overflow: hidden;
     text-align: center;
-    font-size: 1.5em; /* make the headings bigger than the paragraph text!!!*/
-}
-
-#myFirstProjectParagraph
-{
-    margin-bottom: 5px; /* spacing outside border against the bottom */
-    text-align: center;
-    border: 0.2em black solid;
-}
-
-#firstprojvid {
     width: 100%;
 }
 
-#mySecondProject
-{
-    grid-column: 2;
-    grid-row: 2;
-    color: white;
-    margin-bottom: 300px;
+.carousel {
+    display: flex;
+    width: 100%;
+    transition: transform 0.5s ease-in-out;
 }
 
-#project2Heading
-{
-    color: white;
+.carousel-item {
+    min-width: 100%;
+}
+
+.h3ForProjects{
+    font-size: 24px;
+    background-color: rgba(255, 255, 255, 0.8);
+    /* Light background with slight transparency */
+    /* Adds space inside */
+    border-radius: 15px;
+    /* Softens the edges */
+    color: black;
+    /* Keeps text readable */
     margin-bottom: 5px;
-    font-size: 1.5em; /* make the headings bigger than the paragraph text!!!*/
-    text-align: center;
+
 }
 
-#mySecondProjectParagraph
-{
-    margin-bottom: 5px; /* spacing outside border against the bottom */
-    border: 0.2em black solid;
-    text-align: center;
+.description {
+    font-size: 22px;
+    line-height: 1.6;
+    background-color: rgba(255, 255, 255, 0.8);
+    /* Light background with slight transparency */
+    /* Adds space inside */
+    color: black;
+    /* Keeps text readable */
+}
+
+
+.carousel-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-buttons button{
+    padding: 10px 20px;
+    font-size: 25px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+
+#firstprojvid {
+    width: 100%;
 }
 
 #secondprojvid
@@ -262,129 +270,23 @@ element with a class attribute equal to a certain value.*/
    width: 100%;
 }
 
-#myThirdProject
-{
-    grid-column: 3;
-    grid-row: 2;
-    color: white;
-    margin-bottom: 300px;
-}
-
-#project3Heading
-{
-    color: white;
-    margin-bottom: 5px;
-    font-size: 1.5em; /* make the headings bigger than the paragraph text!!!*/
-    text-align: center;
-}
-
-#myThirdProjectParagraph
-{
-    /* set border width, color, and style in border shorthand*/
-    border: 0.2em black solid;
-    margin-bottom: 5px; /* spacing outside border against the bottom */
-    text-align: center;
-}
-
 #thirdprojectvid
 {
     width: 100%;
-}
-
-#myFourthProject
-{
-    grid-column: 1;
-    /* specifies size and location of the item within grid column */
-    grid-row: 3;
-    /* specifies size and location of the item within grid row */
-    color: white;
-    margin-left: 6%;
-    margin-top: -300px;
-}
-
-#project4Heading
-{
-    color: white;
-    margin-bottom: 5px;
-    font-size: 1.5em; /* make the headings bigger than the paragraph text!!!*/
-    text-align: center;
-}
-
-#myFourthProjectParagraph
-{
-    margin-bottom: 5px; /* spacing outside border against the bottom */
-    border: 0.2em black solid;
-    text-align: center;
 }
 
 #fourthprojectvid {
     width: 100%;
 }
 
-#myFifthProject {
-    grid-column: 2;
-    /* specifies size and location of the item within grid column */
-    grid-row: 3;
-    /* specifies size and location of the item within grid row */
-    color: white;
-    margin-top: -300px;
-}
-
-#project5Heading {
-    color: white;
-    margin-bottom: 5px;
-    font-size: 1.5em;
-    /* make the headings bigger than the paragraph text!!!*/
-    text-align: center;
-}
-
-#myFifthProjectParagraph {
-    /* width is in percent of the containing block*/
-    margin-bottom: 5px;
-    /* spacing outside border against the bottom */
-    border: 0.2em black solid;
-    text-align: center;
-}
-
 #fifthprojectvid {
     width: 100%;
-}
-
-#mySixthProject {
-    grid-column: 3;
-    /* specifies size and location of the item within grid column */
-    grid-row: 3;
-    /* specifies size and location of the item within grid row */
-    color: white;
-    margin-top: -300px;
-}
-
-#project6Heading {
-    color: white;
-    margin-bottom: 5px;
-    font-size: 1.5em;
-    /* make the headings bigger than the paragraph text!!!*/
-    text-align: center;
-}
-
-#mySixthProjectParagraph {
-    /* width is in percent of the containing block*/
-    margin-bottom: 5px;
-    /* spacing outside border against the bottom */
-    border: 0.2em black solid;
-    text-align: center;
 }
 
 #sixthprojectvid {
     width: 100%;
 }
 
-/* maybe safe to delete, check on this later 10-2-23 */
-.homepageVideos
-{
-    margin: 0 0 0 0;
-    width: 100%;
-}
 
 #myAboutPage
 {
@@ -675,7 +577,7 @@ element with a class attribute equal to a certain value.*/
 
 #emailsection
 {
-    grid-column: 1 / 3;
+    grid-column:2;
     grid-row: 1;  
     margin-top: 60px;
     color: white;
@@ -1032,86 +934,156 @@ Apply the logic above to other elements on your webpage.*/
     }
 
     #myNavMenu {
-        margin-top: 1px;
-        z-index: 500;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 999;
+        /* Ensures navbar stays above other elements */
+    }
+
+    .nav-header {
+        display: flex;
+        align-items: center; /* Aligning items vertically */
+        justify-content: center; /* Centering items horizontally */
+        position: relative;/* Ensures proper positioning */
+        height: 60px;/* Adjust height as needed */
+    }
+
+    .nav-toggle {
+        display: block;
+        /* Ensure the button is visible */
+        font-size: 2em;
+        /* Adjust size */
+        color: white;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        position: absolute;
+    }
+
+    .nav-toggle i {
+        font-size: 3rem; /* Ensure icon size is correct */
+    }
+
+    .nav-toggle:hover {
+        transform: rotate(90deg);
+    }
+
+    .links {
+        display: none;
+        /* Hide links initially */
+        flex-direction: column;
+        /* Stack items vertically */
+        text-align: center;
+        position: absolute;
+        width: 100%; /* Full width */
+        background-color: #171F6E; /* Consistent with main navbar */
+        padding: 10px;
+    }
+
+    .show-links {
+        display: flex;
+        /* Reveal menu when toggled */
+    }
+
+    .links a {
+        font-size: 1rem;
+        /* Adjust link size */
+        padding: 10px;
+        color: white;
+    }
+
+    .links a:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+        /* Add hover effect */
+    }
+
+    .navBarListItem {
+        margin: 10px auto;
+        /* Center list items */
+    }
+
+    .navBarHyperLink {
+        font-size: 1rem;
+        color: white;
     }
     
     #myHomePageMain {
-        display: grid;
-        /* divide page elements into columns and rows.*/
-        grid-template-columns: 1fr;
-        /* set sizing for grid columns */
-        grid-template-rows: 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr;
-        /* set sizing for grid rows */
-        font-family: Arial, Helvetica, sans-serif;
-        background-color: #004ECC;
-        font-size: 1.5em;
+        display: block;
+        /* Switch to block layout for better mobile scaling */
+        background-color: #003366;
+        /* Slightly darker blue for contrast */
+        padding: 10px;
     }
+
     #ProjectsHeading {
-        grid-column: 1;
-        /* specifies size and location of the item within grid column */
-        grid-row: 1;
-        /* specifies size and location of the item within grid row */
+        font-size: 1.8em;
+        /* Reduce font size for mobile readability */
+        padding: 10px;
+        /* Add spacing */
+    }
+
+    .carousel-container {
+        width: 100%;
+        padding: 0;
+    }
+
+    .carousel {
+        flex-direction: column;
+        /* Stack items vertically */
+        width: 100%;
+    }
+
+    .carousel-item {
+        min-width: 100%;
+    }
+
+    .h3ForProjects {
+        font-size: 18px;
+        /* Reduce font size for mobile */
+        background-color: rgba(255, 255, 255, 0.9);
+        /* Slightly more opaque for clarity */
+        border-radius: 10px;
+        padding: 8px;
+        /* Adds padding */
         text-align: center;
-        }
-
-    #myFirstProject {
-        grid-column: 1;
-        /* specifies size and location of the item within grid column */
-        grid-row: 2;
-        /* specifies size and location of the item within grid row */
-        width: 90%;
-        margin-left: 6%;
+        /* Centers text */
+        margin-bottom: 10px;
     }
 
-    #mySecondProject {
-        grid-column: 1;
-        /* specifies size and location of the item within grid column */
-        grid-row: 3;
-        /* specifies size and location of the item within grid row */
-        margin-left: 6%;
+    .description {
+        font-size: 16px;
+        /* Reduce size for readability */
+        line-height: 1.5;
+        background-color: rgba(255, 255, 255, 0.9);
+        /* Slightly more opaque */
+        padding: 10px;
+        border-radius: 8px;
+        /* Rounded edges for aesthetics */
+        text-align: center;
+        /* Ensures text stays centered */
         width: 90%;
+        /* Adjust for mobile layout */
+        margin: 0 auto;
+        /* Centers description */
     }
 
-    #myThirdProject {
-        grid-column: 1;
-        /* specifies size and location of the item within grid column */
-        grid-row: 4;
-        /* specifies size and location of the item within grid row */
-        margin-left: 6%;
-        width: 90%;
+    .carousel-buttons {
+        display: none;
+        /* Hide navigation buttons for better mobile layout */
     }
 
-    #myFourthProject {
-        grid-column: 1;
-        /* specifies size and location of the item within grid column */
-        grid-row: 5;
-        /* specifies size and location of the item within grid row */
-        margin-left: 6%;
-        margin-top: 10px;
-        width: 90%;
+    /* Ensure videos fit screen width */
+    #firstprojvid,
+    #secondprojvid,
+    #thirdprojectvid,
+    #fourthprojectvid,
+    #fifthprojectvid,
+    #sixthprojectvid {
+        width: 100%;
+        height: auto;
+        /* Maintain aspect ratio */
     }
-
-    #myFifthProject {
-        grid-column: 1;
-        /* specifies size and location of the item within grid column */
-        grid-row: 6;
-        /* specifies size and location of the item within grid row */
-        margin-left: 6%;
-        margin-top: 10px;
-        width: 90%;
-    }
-
-    #mySixthProject {
-        grid-column: 1;
-        /* specifies size and location of the item within grid column */
-        grid-row: 7;
-        /* specifies size and location of the item within grid row */
-        margin-left: 6%;
-        margin-top: 10px;
-        width: 90%;
-    }
-
 
     #myAboutPage {
         display: grid;

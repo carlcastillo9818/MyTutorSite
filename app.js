@@ -1,11 +1,15 @@
-// javascript code for certain parts of the website
-// credits to the following source: https: //codepen.io/magraytariq/pen/QWOrBQE
-
-
 const navToggle = document.querySelector(".nav-toggle");
 const links = document.querySelector(".links");
 const items = document.querySelectorAll('.accordion button');
 
+const carousel = document.querySelector('.carousel');
+const carouselItems = document.querySelectorAll('.carousel-item');
+const prevBtn = document.getElementById('prevBtn');
+const nextBtn = document.getElementById('nextBtn');
+
+
+// javascript code for the accordion that shows various navigation links to different pages of the website.
+// credits to the following source: https: //codepen.io/magraytariq/pen/QWOrBQE
 /* this block of code is specifically for the tutoring services page sections*/
 function toggleAccordion() {
     const itemToggle = this.getAttribute('aria-expanded');
@@ -39,4 +43,34 @@ navToggle.addEventListener("click", function () {
 });
 
 
+/* 
+The JS code below  is responsible for enabling the carousel of items (project descriptions and videos) to function through two
+buttons and swiping left and right through each project while on the homepage of the website. I used MS copilot to help me generate some of the code
+then I made my own changes to it.
+*/
+console.log(carouselItems);
+console.log(carouselItems.length); // Should be 2
+
+let currentIndex = 0;
+
+function updateSlide() {
+    const itemWidth = carouselItems[0].offsetWidth;  // Get correct width
+    carousel.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
+    //console.log(`carousel transform val: ${carousel.style.transform}`);
+
+}
+
+nextBtn.addEventListener('click', () => {
+    //console.log("clicked on next button");
+    currentIndex = (currentIndex + 1) % carouselItems.length;
+    //console.log(`current index is ${currentIndex}`);
+    updateSlide();
+});
+
+prevBtn.addEventListener('click', () => {
+    //console.log("clicked on prev button");
+    currentIndex = (currentIndex - 1 + carouselItems.length) % carouselItems.length;
+    //console.log(`current index is ${currentIndex}`);
+    updateSlide();
+});
 
