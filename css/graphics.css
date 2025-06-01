@@ -982,8 +982,11 @@ Apply the logic above to other elements on your webpage.*/
     }
 
     .show-links {
-        display: flex;
-        /* Reveal menu when toggled */
+        display: flex;/* Keeps items arranged in flexbox */
+        flex-direction: column;/* Stacks links vertically */
+        height: auto;/* Allows it to grow based on content */
+        max-height: 500px; /* Prevents excessive height */
+        overflow: hidden;
     }
 
     .links a {
