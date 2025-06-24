@@ -48,8 +48,6 @@ The JS code below  is responsible for enabling the carousel of items (project de
 buttons and swiping left and right through each project while on the homepage of the website. I used MS copilot to help me generate some of the code
 then I made my own changes to it.
 */
-console.log(carouselItems);
-console.log(carouselItems.length); // Should be 2
 
 let currentIndex = 0;
 

@@ -9,45 +9,17 @@ source of code from this video: https: //www.youtube.com/watch?v=3PHXvlpOkf4&t=4
 website to get icons to put in css code : https: //fontawesome.com/v4/
 */
 
+/* this root is for defining global css vars that can be reused throughout the css file */
 :root {
-    /* dark shades of primary color*/
-    --clr-primary-1: hsl(205, 86%, 17%);
-    --clr-primary-2: hsl(205, 77%, 27%);
-    --clr-primary-3: hsl(205, 72%, 37%);
-    --clr-primary-4: hsl(205, 63%, 48%);
+
     /* primary/main color */
     --clr-primary-5: hsl(205, 78%, 60%);
     /* lighter shades of primary color */
-    --clr-primary-6: hsl(205, 89%, 70%);
-    --clr-primary-7: hsl(205, 90%, 76%);
     --clr-primary-8: hsl(205, 86%, 81%);
-    --clr-primary-9: hsl(205, 90%, 88%);
-    --clr-primary-10: hsl(205, 100%, 96%);
-    /* darkest grey - used for headings */
-    --clr-grey-1: hsl(209, 61%, 16%);
-    --clr-grey-2: hsl(211, 39%, 23%);
-    --clr-grey-3: hsl(209, 34%, 30%);
-    --clr-grey-4: hsl(209, 28%, 39%);
-    /* grey used for paragraphs */
-    --clr-grey-5: hsl(210, 22%, 49%);
-    --clr-grey-6: hsl(209, 23%, 60%);
-    --clr-grey-7: hsl(211, 27%, 70%);
-    --clr-grey-8: hsl(210, 31%, 80%);
-    --clr-grey-9: hsl(212, 33%, 89%);
-    --clr-grey-10: hsl(210, 36%, 96%);
-    --clr-white: #fff;
-    --clr-red-dark: hsl(360, 67%, 44%);
-    --clr-red-light: hsl(360, 71%, 66%);
-    --clr-green-dark: hsl(125, 67%, 44%);
-    --clr-green-light: hsl(125, 71%, 66%);
-    --clr-black: #222;
-    --ff-primary: "Roboto", sans-serif;
-    --ff-secondary: "Open Sans", sans-serif;
     --transition: all 0.3s linear;
     --spacing: 0.1rem;
     --radius: 0.25rem;
-    --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+
     --max-width: 1170px;
     --fixed-width: 620px;
 }
@@ -78,30 +50,24 @@ element with a class attribute equal to a certain value.*/
 {
     /* used a grid layout for the header */
     /*background-color: #00C4FF; */
-    background-color: #004ECC;
+    background-color: #003366;
     display: grid;
-    grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+    grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
 }
 
 
-#websiteMainLogoImg
-{
-    /* adjusted spacing between content and borders */
-    grid-column: 3;
-    grid-row: 1;
-
-}
 
 #websiteTitle
 {
     /* adjusted different spacings and size of the site title at the top*/
     font-size: 4em;
-    grid-column: 4;
+    grid-column: 1;
     grid-row: 1;
-    text-shadow: 2px 2px 3px black;
+    text-align: center;
+    text-shadow: 4px 2px 3px black;
 }
 
 #myNavMenu
@@ -191,7 +157,7 @@ element with a class attribute equal to a certain value.*/
     column-gap: 0; /* Removes extra space */
     justify-content: center; /* Centers grid content */
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #004ECC;
+    background-color: #003366;
     width: 100%;
 }
 
@@ -203,6 +169,7 @@ element with a class attribute equal to a certain value.*/
     font-size: 2.5em;
     color: white;
     text-align: center;
+    text-shadow: 2px 2px 3px black;
     width: 100%;
 }
 
@@ -229,7 +196,6 @@ that will move and show each project like an image slideshow but instead with yo
     background-color: rgba(255, 255, 255, 0.8);
     /* Light background with slight transparency */
     /* Adds space inside */
-    border-radius: 15px;
     /* Softens the edges */
     color: black;
     /* Keeps text readable */
@@ -255,7 +221,7 @@ that will move and show each project like an image slideshow but instead with yo
 
 .carousel-buttons button{
     padding: 10px 20px;
-    font-size: 25px;
+    font-size: 50px;
     cursor: pointer;
     margin: 5px;
 }
@@ -296,7 +262,7 @@ that will move and show each project like an image slideshow but instead with yo
     column-gap:1%; /* adjust the space between each column in the grid */
     row-gap: 50px; /* adjust the space between each row in the grid*/
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #004ECC;
+    background-color: #003366;
 }
 
 #GetToKnowMeHeading
@@ -306,6 +272,7 @@ that will move and show each project like an image slideshow but instead with yo
     font-size: 2.5em;
     text-align: center;
     color: white;
+    text-shadow: 2px 2px 3px black;
 }
 
 #basicFactsSection
@@ -322,7 +289,7 @@ that will move and show each project like an image slideshow but instead with yo
     margin-bottom: 5px;
     font-size: 1.5em;
     margin-left: 5%;
-
+    text-shadow: 2px 2px 3px black;
 }
 
 #basicFactsUnorderedList
@@ -351,6 +318,7 @@ that will move and show each project like an image slideshow but instead with yo
     margin-bottom: 5px;
     font-size: 1.5em;
     margin-left: 5%;
+    text-shadow: 2px 2px 3px black;
 }
 
 #tutorMissionParagraph
@@ -387,6 +355,7 @@ that will move and show each project like an image slideshow but instead with yo
     margin-right: 18%;
     font-size: 1.5em;
     text-align: center;
+    text-shadow: 2px 2px 3px black;
 }
 
 #myPortfolioSitesUnorderedList
@@ -432,7 +401,7 @@ that will move and show each project like an image slideshow but instead with yo
     column-gap:1%; /* adjust the space between each column in the grid */
     row-gap: 50px; /* adjust the space between each row in the grid*/
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #004ECC;
+    background-color: #003366;
 }
 
 #TestimonialsHeading2
@@ -442,6 +411,7 @@ that will move and show each project like an image slideshow but instead with yo
     font-size: 2.5em;
     text-align: center; /* center the text */
     color: white;
+    text-shadow: 2px 2px 3px black;
 }
 
 #vidtest1
@@ -472,6 +442,7 @@ that will move and show each project like an image slideshow but instead with yo
 .vidtestheading
 {
     font-size: 1.5em;
+    text-shadow: 2px 2px 3px black;
 }
 
 .testimonialVids
@@ -490,6 +461,7 @@ that will move and show each project like an image slideshow but instead with yo
 
 .IRheading {
     font-size: 1.5em;
+    text-shadow: 2px 2px 3px black;
 }
 
 #IR1img {
@@ -525,7 +497,7 @@ that will move and show each project like an image slideshow but instead with yo
     grid-template-rows: 1fr; /* set sizing for grid rows */
     column-gap:1%; /* adjust the space between each column in the grid */
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #004ECC;
+    background-color: #003366;
 }
 
 
@@ -536,6 +508,7 @@ that will move and show each project like an image slideshow but instead with yo
     font-size: 2.5em;
     text-align: center; /* center the text */
     color: white;
+    text-shadow: 2px 2px 3px black;
 }
 
 #socialmediasection
@@ -558,6 +531,7 @@ that will move and show each project like an image slideshow but instead with yo
 {
     text-align: center;
     font-size: 1.6em;
+    text-shadow: 2px 2px 3px black;
 }
 
 #socialmediapara
@@ -595,6 +569,7 @@ that will move and show each project like an image slideshow but instead with yo
 {
     text-align: center;
     font-size: 1.6em;
+    text-shadow: 2px 2px 3px black;
 }
 
 #emailhyperlink
@@ -645,7 +620,7 @@ that will move and show each project like an image slideshow but instead with yo
     grid-template-rows: 1fr; /* set sizing for grid rows */
     column-gap:1%; /* adjust the space between each column in the grid */
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #004ECC;
+    background-color: #003366;
 }
 
 #tutoringServicesHeading
@@ -655,6 +630,7 @@ that will move and show each project like an image slideshow but instead with yo
     font-size: 2.3em;
     text-align: center; /* center the text */
     color: white;
+    text-shadow: 2px 2px 3px black;
 }
 
 #tutorSubjectsSection
@@ -673,6 +649,7 @@ that will move and show each project like an image slideshow but instead with yo
     text-align: center;
     font-size: 1.8em;
     text-decoration: none;
+    text-shadow: 2px 2px 3px black;
 }
 
 #tutorSubjectsUL
@@ -703,6 +680,7 @@ that will move and show each project like an image slideshow but instead with yo
 {
     text-align: center;
     font-size: 1.8em;
+    text-shadow: 2px 2px 3px black;
 }
 
 /* all CSS code for accordion buttons for FAQ section
@@ -822,18 +800,20 @@ credits to the following source: https: //codepen.io/magraytariq/pen/QWOrBQE
     border: 0.2em black solid;
     padding-left: 5px;
     padding-right: 5px;
+    
 }
 
 #gameSectionHeading {
     text-align: center;
     font-size: 1.8em;
     text-decoration: none;
+    text-shadow: 2px 2px 3px black;
 }
 
 #mySiteFooter
 {
     /* adjusted color and text for the footer element*/
-    background-color: #004ECC;
+    background-color: #003366;
     text-align: center;
     font-size: 1.5em;
     font-family: Arial, Helvetica, sans-serif;
@@ -841,14 +821,16 @@ credits to the following source: https: //codepen.io/magraytariq/pen/QWOrBQE
 
 .footerHyperLink
 {
-    /* adjusted text colors for hyperlinks in footer menu */
-    color: black;
+    
+    /* adjusted text colors for hyperlinks in footer menu, UPDATE June 2025: the class selector footer hyperlink is no longer being used*/
+    color: pink;
 }
 
 #copyrightText
 {
     /* adjusted text color of the copyright text */
-    color: black;
+    color: white;
+    text-shadow: 2px 2px 3px black;
 }
 
 /*In addition to resize text and images,
@@ -905,32 +887,25 @@ Apply the logic above to other elements on your webpage.*/
     }
 
     #mySiteHeader {
-            /* used a grid layout for the header */
-            /*background-color: #00C4FF; */
-            background-color: #004ECC;
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: 1fr 1fr;
-            font-family: Arial, Helvetica, sans-serif;
-            color: white;
-        }
-    
-    
-    #websiteMainLogoImg {
-        /* adjusted spacing between content and borders */
-        grid-column: 1;
-        grid-row: 1;
-        margin-left: 30%;
-        margin-right: 30%;
+        /* used a grid layout for the header */
+        /*background-color: #00C4FF; */
+        background-color: #003366;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
     }
+
+
 
     #websiteTitle {
         /* adjusted different spacings and size of the site title at the top*/
         font-size: 4em;
         grid-column: 1;
-        grid-row: 2;
-        text-shadow: 2px 2px 3px black;
+        grid-row: 1;
         text-align: center;
+        text-shadow: 4px 2px 3px black;   
     }
 
     #myNavMenu {
@@ -1024,6 +999,7 @@ Apply the logic above to other elements on your webpage.*/
         /* Reduce font size for mobile readability */
         padding: 10px;
         /* Add spacing */
+        text-shadow: 4px 2px 3px black;
     }
 
     .carousel-container {
@@ -1096,7 +1072,7 @@ Apply the logic above to other elements on your webpage.*/
         grid-template-rows: 0.1fr 0.1fr 0.1fr 0.7fr 0.7fr;
         /* adjust the space between each row in the grid*/
         font-family: Arial, Helvetica, sans-serif;
-        background-color: #004ECC;
+        background-color: #003366;
         font-size: 1.5em;
     }
 
@@ -1107,6 +1083,7 @@ Apply the logic above to other elements on your webpage.*/
         color: white;
         margin-bottom: -20px;
         width: 100%;
+        text-shadow: 4px 2px 3px black;
     }
 
     #basicFactsSection {
@@ -1123,6 +1100,7 @@ Apply the logic above to other elements on your webpage.*/
         margin-bottom: 5px;
         margin:0;
         text-align: center;
+        text-shadow: 4px 2px 3px black;
     }
 
     #basicFactsUnorderedList {
@@ -1153,6 +1131,7 @@ Apply the logic above to other elements on your webpage.*/
         margin-bottom: 5px;
         margin: 0;
         text-align: center;
+        text-shadow: 4px 2px 3px black;
     }
 
     #tutorPhotoSection {
@@ -1191,6 +1170,7 @@ Apply the logic above to other elements on your webpage.*/
         font-size: 1.5em;
         text-align: center;
         margin: 0;
+        text-shadow: 4px 2px 3px black;
     }
 
     #myPortfolioSitesUnorderedList {
@@ -1231,7 +1211,7 @@ Apply the logic above to other elements on your webpage.*/
 
         /* adjust the space between each column in the grid */
         font-family: Arial, Helvetica, sans-serif;
-        background-color: #004ECC;
+        background-color: #003366;
     }
     
     #tutoringServicesHeading {
@@ -1241,6 +1221,7 @@ Apply the logic above to other elements on your webpage.*/
         text-align: center;
         /* center the text */
         color: white;
+        text-shadow: 4px 2px 3px black;
     }
 
     #tutorSubjectsSection {
@@ -1296,7 +1277,7 @@ Apply the logic above to other elements on your webpage.*/
         grid-template-rows: 0.1fr 1fr 1fr 1fr;
         /* adjust the space between each column in the grid */
         font-family: Arial, Helvetica, sans-serif;
-        background-color: #004ECC;
+        background-color: #003366;
     }
 
 
@@ -1385,10 +1366,11 @@ Apply the logic above to other elements on your webpage.*/
         row-gap: 1px;
         /* adjust the space between each row in the grid*/
         font-family: Arial, Helvetica, sans-serif;
-        background-color: #004ECC;
+        background-color: #003366;
     }
 
     #TestimonialsHeading2 {
+        text-shadow: 4px 2px 3px black;
         grid-column: 1;
         /* specifies size and location of the item within grid column */
         grid-row: 1;
@@ -1431,6 +1413,7 @@ Apply the logic above to other elements on your webpage.*/
 
     .vidtestheading {
         font-size: 1.5em;
+        text-shadow: 4px 2px 3px black;
     }
 
     .testimonialVids {
@@ -1448,6 +1431,7 @@ Apply the logic above to other elements on your webpage.*/
 
     .IRheading {
         font-size: 1.5em;
+        text-shadow: 4px 2px 3px black;
     }
 
     #IR1img {
